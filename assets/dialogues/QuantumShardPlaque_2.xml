@@ -1,0 +1,12 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+      <Page>The strange rock moving around in this grotto appears to react to conscious observation.</Page>
+      <Page>The level-headed among us realize there must be some sort of optical illusion at play, but Gabbro claims the rock “exists in all possible states until it is observed” (whatever that means).</Page>
+      <Page>Whatever is actually happening, both sides of this debate agree the effect is extremely creepy.</Page>
+    </Dialogue>
+	</DialogueNode>
+</DialogueTree>

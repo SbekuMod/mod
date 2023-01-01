@@ -1,0 +1,19 @@
+
+<DialogueTree>
+	<NameField>RECORDING</NameField>
+	<DialogueNode>
+		<Name>Riebeck_SouthPoleRecording</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+    	<Dialogue>
+			<Page>I’m here! I did it! I put the ship down safely!</Page>
+			<Page>Um, in that the ship went down, and I didn’t sustain bodily harm. A few minor repairs, and it’s like the ship never even hit those rocks!</Page>
+			<Page>One of my better attempts. Feldspar would barely have laughed at me, I bet.</Page>
+			<Page>That’s the good news. The bad news... I, uh, haven’t found a way inside this structure yet. The door is broken, and I know I’m not great at exploring, but I think I would have found a different entrance by now if there were one. P... probably.</Page>
+			<Page>I can’t get inside from <![CDATA[<i>]]>here<![CDATA[</i>]]>, but I know there are paths below the surface. I’m going to head north to the ruins on the equator to try to find a way down.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>BH_RIEBECK_R2</FactID>
+			<FactID>BH_OBSERVATORY_R4</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

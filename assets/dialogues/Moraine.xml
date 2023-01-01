@@ -1,0 +1,84 @@
+<!--
+	IF IT’S NIGHT, change SignalScopeKid2 dialogue to this:
+	I’m waiting for nightfall so I can pick up sounds from distant planets using my signalscope.
+-->
+
+<DialogueTree>
+	<NameField>Moraine</NameField>
+	
+	<DialogueNode>
+		<Name>SignalscopeKid1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<SetCondition>HasTalkedtoMoraine</SetCondition>
+		<Dialogue>
+			<Page>Hm? Oh, hello, astronaut.</Page>
+			<Page>This is good weather for your launch, right? That’s lucky!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>What are you up to?</Text>
+				<DialogueTarget>SignalscopeKid2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Any good sounds from space today?</Text>
+				<DialogueTarget>SignalscopeKid3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+		<DialogueNode>
+		<Name>SignalscopeKid5</Name>
+		<EntryCondition>HasTalkedtoMoraine</EntryCondition>
+		<Dialogue>
+			<Page>Hello, again.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Haven’t you been up in this tree a while?</Text>
+				<DialogueTarget>SignalscopeKid6</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Any good sounds from space today?</Text>
+				<DialogueTarget>SignalscopeKid3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalscopeKid2</Name>
+		<Dialogue>
+			<Page>I’m using my signalscope to pick up sounds from distant planets.</Page>
+			<Page>It’s set to the Outer Wilds Ventures frequency so I can pick up the travelers’ music.</Page>
+		</Dialogue>
+		<SetCondition>SHOW_SIGNALSCOPE_PROMPT</SetCondition>
+		<DialogueTarget>SignalscopeKid4</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalscopeKid3</Name>
+		<Dialogue>
+			<Page>There are! My signalscope is set to the Outer Wilds Ventures frequency, so I’m listening to the travelers’ music.</Page>
+		</Dialogue>
+		<SetCondition>SHOW_SIGNALSCOPE_PROMPT</SetCondition>
+		<DialogueTarget>SignalscopeKid4</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalscopeKid4</Name>
+		<Dialogue>
+			<Page>Last night I heard Riebeck’s banjo coming from Brittle Hollow. I hope that means they’re safe.</Page>
+			<Page>I can hear different planets, too! It depends on what time of day or night it is, since different planets are in the sky at different times.</Page>
+			<Page>Signalscopes are cool.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalscopeKid6</Name>
+		<Dialogue>
+			<Page>I’m concerned Marl will cut down this tree if there’s no one in it, so I don’t want to leave it for too long.</Page>
+            <Page>Mayor Rutile says Marl isn’t supposed to cut it down, but I don’t think they see eyes-to-eyes on this one.</Page>
+            <Page>Um, I’ll still watch your launch, though! I’ll have a good view from up here.</Page>
+        </Dialogue>
+    </DialogueNode>
+
+</DialogueTree>

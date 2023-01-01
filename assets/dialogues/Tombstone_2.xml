@@ -1,0 +1,10 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Here lies BinarySemaphore</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

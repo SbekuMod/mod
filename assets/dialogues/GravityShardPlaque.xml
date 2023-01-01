@@ -1,0 +1,11 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>This crystal was taken from a Nomai ruin on Brittle Hollow.</Page>
+			<Page>It seems to create a local gravity distortion, and was most likely used to traverse steep surfaces. Try it out!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

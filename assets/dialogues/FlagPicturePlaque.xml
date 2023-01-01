@@ -1,0 +1,11 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Outer Wilds Ventures, Timber Hearth’s first and only space program, was founded to explore the farthest reaches of our solar system.</Page>
+			<Page>Feldspar was the first Hearthian to be intentionally launched into space. They completed the first orbit around Timber Hearth and later made the first of what would be many landings on our moon, the Attlerock.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

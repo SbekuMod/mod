@@ -1,0 +1,87 @@
+<DialogueTree>
+	<NameField>Mica</NameField>
+
+	<DialogueNode>
+		<Name>ModelRocketKid1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hey, it’s you!</Page>
+			<Page>Slate said you’re blasting off in your ship today. I’m really excited to see the launch!</Page>
+			<Page>Aren’t you gonna go into space? Aren’t you? You better not have changed your mind!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Hey, I’m still going!</Text>
+				<DialogueTarget>ModelRocketKid5</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I want to practice with a pro before I leave.</Text>
+				<DialogueTarget>ModelRocketKid2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I hear you and Slate beefed up the model ship. Can I see it?</Text>
+				<DialogueTarget>ModelRocketKid3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ModelRocketKid5</Name>
+		<Dialogue>
+			<Page>You better be! It’s been forever since anyone launched into space. I really, <![CDATA[<i>]]>really<![CDATA[</i>]]> want to see it.</Page>
+			<Page>Really bad.</Page>
+			<Page>Hey, you want to try out my model ship? Slate says it’s just like the real thing, only less likely to start a fire.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ModelRocketKid2</Name>
+		<Dialogue>
+			<Page>Aww, you’re just saying that.<![CDATA[<Pause>]]> ...But if you <![CDATA[<i>really</i>]]> want to practice with me, I <![CDATA[<i>guess</i>]]> I could help you out a little.</Page>
+			<Page>HEARTH_MOON_1</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ModelRocketKid3</Name>
+		<Dialogue>
+			<Page>Yeah, we recalibrated the controls and installed better thrusters. Want to give it a test drive? Slate says it’s just like the real thing, only less likely to start a fire.</Page>
+			<Page>MICA_WRATH_2</Page>
+			<Page>MICA_WRATH_3</Page>
+			<Page>MICA_WRATH_4</Page>
+		</Dialogue>
+		<DialogueTarget>ModelRocketKid4</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ModelRocketKid4</Name>
+		<Dialogue>
+			<Page>Try to land on one of the <![CDATA[<color=orange>geyser pools</color>]]>. Show me what you’ve got!</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Failure</Name>
+		<EntryCondition>CrashedModelRocket</EntryCondition>
+		<Dialogue>
+			<Page>Wow, that was just like the time the external fuel tanks exploded on reentry!</Page>
+			<Page>You’ll... you’ll be okay flying the big one, right?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Success</Name>
+		<EntryCondition>LandedModelRocket</EntryCondition>
+		<Dialogue>
+			<Page>What a landing! I guess that’s why Slate lets you fly the real thing, huh?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ModelRocketKidSecondary</Name>
+		<Dialogue>
+			<Page>Someday, I want to design a ship that goes even faster than the ones Slate makes!</Page>
+			<Page>Slate says they think I can do it. And Gossan says I should ask Slate to be my first test pilot.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

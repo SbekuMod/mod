@@ -1,0 +1,60 @@
+<DialogueTree>
+	<NameField>Arkose</NameField>
+	
+	<DialogueNode>
+		<Name>Arkose1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hi, astronaut!</Page>
+			<Page>You know the patch of ghost matter inside this fence? Gossan said it used to be bigger when they were a hatchling. ’Cause ghost matter evaporates.</Page>
+			<Page>It just takes a su-<![CDATA[<Pause=1>]]>u-<![CDATA[<Pause=1>]]>u-<![CDATA[<Pause=1>]]>per long time to go away.</Page>
+			<Page>I hope there’s still ghost matter in the village when I’m a grown-up. Ghost matter is awesome!</Page>
+		</Dialogue>
+		<SetCondition>Arkose_loves_ghost_matter</SetCondition>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Ghost matter is super cool. It’ll burn the heck out of you!</Text>
+				<DialogueTarget>Arkose2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You shouldn’t be throwing rocks in there — ghost matter is dangerous.</Text>
+				<DialogueTarget>Arkose3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You know ghost matter is how Tektite lost their foot, right?</Text>
+				<DialogueTarget>Arkose4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Arkose2</Name>
+		<Dialogue>
+			<Page>Yeah! I heard touching it hurts so bad it feels like your whole hand’s on fire!</Page>
+			<Page>Try not to walk into any in space, okay? That sounds bad and painful.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Arkose3</Name>
+		<Dialogue>
+			<Page>Uhhh, obviously? That’s what makes it so <![CDATA[<i>awesome</i>]]>? Geez, I’m not dumb enough to <![CDATA[<i>touch</i>]]> it.</Page>
+			<Page>Ugh, you’re such a grown-up.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Arkose4</Name>
+		<Dialogue>
+			<Page>Whoa, really?! <![CDATA[<Pause=2>]]>...That is <![CDATA[<i>so cool</i>]]>!</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Arkose5</Name>
+		<EntryCondition>Arkose_loves_ghost_matter</EntryCondition>
+		<Dialogue>
+			<Page>It’s cool that Little Scouts can detect ghost matter and all, but what would be <![CDATA[<i>really</i>]]> cool is if the Little Scout could, like, shoot ghost matter at stuff. All <![CDATA[<i>pew pew pew</i>]]>!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

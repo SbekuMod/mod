@@ -1,0 +1,100 @@
+<DialogueTree>
+	<NameField>Tephra</NameField>
+
+	<DialogueNode>
+		<Name>HideAndSeek1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hullo, astronaut!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>If it isn’t my favorite troublemaker.</Text>
+				<DialogueTarget>HideAndSeek2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What’s with the radio?</Text>
+				<DialogueTarget>HideAndSeek2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>HideAndSeek2</Name>
+		<Dialogue>
+			<Page>We <![CDATA[<i>]]>wanted<![CDATA[</i>]]> to play hide and seek, but Moraine won’t let us borrow their signalscope because it’s “really delicate” and “not supposed to be thrown around like that.”</Page>
+			<Page>Hey, hey, can we use <![CDATA[<i>]]>your<![CDATA[</i>]]> signalscope? Can we? Can we, please? We’ll even let you be “it”!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Sure, let’s play!</Text>
+				<DialogueTarget>AgreeToPlay</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Sorry, can’t today.</Text>
+				<DialogueTarget>RefuseToPlay</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>AgreeToPlay</Name>
+		<Dialogue>
+			<Page>Woohoo! Okay, here are the rules. Galena and me will hide with these radios, and you’ll use your signalscope to find us.</Page>
+			<Page>Last one to be found wins! Okay, close your eyes and start counting!</Page>
+		</Dialogue>
+		<DialogueOption>
+			<Text>One, two, three...</Text>
+		</DialogueOption>
+		<SetCondition>BeginHideAndSeek</SetCondition>
+<!-- 		<DialogueOption>
+			<Text>On second thought, I’m pretty busy.</Text>
+			<DialogueTarget>RefuseToPlay</DialogueTarget>
+		</DialogueOption> -->
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>RefuseToPlay</Name>
+		<Dialogue>
+			<Page>Awww, really? But we can’t play without a signalscope... Play with us later, okay?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundYou</Name>
+		<EntryCondition>BeginHideAndSeek</EntryCondition>
+		<Dialogue>
+			<Page>Awww, you found me? But my hiding spot was super good!</Page>
+			<Page>Don’t forget, you have to find both of us, okay?</Page>
+		</Dialogue>
+		<SetCondition>FoundKidOne</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>LastKidFound</Name>
+		<EntryCondition>LastKidToFind</EntryCondition>
+		<Dialogue>
+			<Page>You got me, but I’m the last one. I win!</Page>
+			<Page>Promise you’ll play again when you get back from space, okay? You gotta!</Page>
+		</Dialogue>
+		<SetCondition>EndHideAndSeek</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>AlreadyFoundYou</Name>
+		<EntryCondition>FoundKidOne</EntryCondition>
+		<Dialogue>
+			<Page>I wanted to hide in the observatory, but Hornfels said I was “making a nuisance of myself.”</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>PlayedTheGame</Name>
+		<EntryCondition>EndHideAndSeek</EntryCondition>
+		<Dialogue>
+			<Page>Hullo, astronaut!</Page>
+			<Page>We’re all going to watch your launch later. I hope space is nice!</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

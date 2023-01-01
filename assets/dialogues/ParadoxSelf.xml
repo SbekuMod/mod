@@ -1,0 +1,815 @@
+<DialogueTree>
+  <NameField>Self</NameField>
+
+  <DialogueNode>
+    <Name>Start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>...Whoa.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What the heck happened?</Text>
+        <DialogueTarget>Confused1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>This is the greatest day of my life!</Text>
+        <DialogueTarget>Excited1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Are you me from the last loop?</Text>
+        <DialogueTarget>Looped1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>This got weird in a hurry.</Text>
+        <DialogueTarget>Wrong1</DialogueTarget>
+      </DialogueOption>      
+      <DialogueOption>
+        <Text>AAAAAAAAAAHHHH!</Text>
+        <DialogueTarget>Panic1</DialogueTarget>
+        <ConditionToSet>PLAYER_TIMECLONE_FREAKOUT</ConditionToSet>
+      </DialogueOption>     
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Confused1</Name>
+    <Dialogue>
+      <Page>If you're me, then I'm as confused as you are.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Do you think we have the same memories?</Text>
+        <DialogueTarget>Memories0B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Do you think it's okay there's two of us?</Text>
+        <DialogueTarget>Wrong2A</DialogueTarget>
+      </DialogueOption>   
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Memories0B</Name>
+    <Dialogue>
+      <Page>Good question. Let's see...</Page>
+    </Dialogue> 
+    <DialogueTarget>Memories1</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Memories1</Name>
+    <Dialogue>
+      <Page>I remember all the time loops, including last loop when I jumped into the black hole in here. What about you?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Me, too. Sounds like our memories diverge at the start of this loop.</Text>
+        <DialogueTarget>WokeUp1C</DialogueTarget>        
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Same, except I woke up at the campfire, like always.</Text>
+        <DialogueTarget>WokeUp1B</DialogueTarget>
+      </DialogueOption>         
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>WokeUp1B</Name>
+    <Dialogue>
+      <Page>It makes sense one of the two versions of us would start at the campfire as usual.</Page>
+    </Dialogue>
+    <DialogueTarget>Merge</DialogueTarget>
+  </DialogueNode>
+
+    <DialogueNode>
+    <Name>WokeUp1C</Name>
+    <Dialogue>
+      <Page>Makes sense to me, seeing how jumping into the black hole is definitely what created two of us.</Page>
+    </Dialogue>
+    <DialogueTarget>Merge</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Excited1</Name>
+    <Dialogue>
+      <Page>Sure, two of us is great and all, but is it the <![CDATA[<i>greatest</i>]]>? What about the day we, you know... what about that one?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Are you talking about the day I...?</Text>
+        <DialogueTarget>Excited2A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Oh, right. That one's probably still the greatest.</Text>
+        <DialogueTarget>Excited2B</DialogueTarget>
+      </DialogueOption>         
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Excited2A</Name>
+    <Dialogue>
+      <Page>What? No! No, I'm talking about the <![CDATA[<i>other</i>]]> one.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>OH. Yep, that makes way more sense.</Text>
+        <DialogueTarget>Excited3A</DialogueTarget>
+      </DialogueOption>                        
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Excited2B</Name>
+    <Dialogue>
+      <Page>Haha, I know, right? But today is probably the next greatest day of our life after that one.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Wait, can you read my mind?</Text>
+        <DialogueTarget>Excited3B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>What other memories do you have?</Text>
+        <DialogueTarget>Memories0A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Think it's okay there's two of us?</Text>
+        <DialogueTarget>Wrong2B</DialogueTarget>
+      </DialogueOption>                          
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Excited3B</Name>
+    <Dialogue>
+      <Page>Definitely no. I just have the same memories as you. ...Except for this loop, I mean.</Page>
+      <Page>I started this loop by popping out of a white hole inside the Ash Twin Project, since in the loop before this one I jumped into the black hole.</Page>
+    </Dialogue>
+    <DialogueTarget>Merge</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Excited3A</Name>
+    <Dialogue>
+      <Page>Yeah, now you've got it. That was an incredible day.</Page>
+      <Page>But today is probably the next greatest day of our life after that one.</Page>      
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Wait, can you read my mind?</Text>
+        <DialogueTarget>Excited3B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>What other memories do you have?</Text>
+        <DialogueTarget>Memories0A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Think it's okay there's two of us?</Text>
+        <DialogueTarget>Wrong2B</DialogueTarget>
+      </DialogueOption>                          
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Memories0A</Name>
+    <Dialogue>
+      <Page>Let's see... We should have all the same memories before the whole "going into space and becoming aware of the alien time loop" thing.</Page>
+    </Dialogue>     
+    <DialogueTarget>Memories1</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Looped1</Name>
+    <Dialogue>
+      <Page>I think so. I started this current loop by popping out of a white hole inside the Ash Twin Project.</Page>      
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I started at the campfire like usual.</Text>
+        <DialogueTarget>WokeUp1C</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>What do you remember from before this loop?</Text>
+        <DialogueTarget>Memories1</DialogueTarget>
+      </DialogueOption>                        
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong1</Name>
+    <Dialogue>
+      <Page>Yeah, duplicating living beings probably wasn't what the Nomai had in mind when they built the Ash Twin Project.</Page>      
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I wonder if we have the same memories.</Text>
+        <DialogueTarget>Memories0B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I wonder if there being two of us screws anything up.</Text>
+        <DialogueTarget>Wrong2A</DialogueTarget>
+      </DialogueOption>                        
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong2A</Name>
+    <Dialogue>
+      <Page>Well, we're talking to each other and nothing's exploded yet.</Page>      
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Yeah, it's a pretty novel experience.</Text>
+        <DialogueTarget>Wrong3B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Gossan always says that means the date's going well.</Text>
+        <DialogueTarget>Wrong3A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Maybe the universe doesn't mind two of us.</Text>
+        <DialogueTarget>Wrong3C</DialogueTarget>
+      </DialogueOption>                               
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong2B</Name>
+    <Dialogue>
+      <Page>Well, we're talking to each other and nothing's exploded yet.</Page>      
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>That seems positive.</Text>
+        <DialogueTarget>Wrong3C</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Yeah, it's a pretty novel experience.</Text>
+        <DialogueTarget>Wrong3B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Gossan always says that means the date's going well.</Text>
+        <DialogueTarget>Wrong3A</DialogueTarget>
+      </DialogueOption>                               
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong3A</Name>
+    <Dialogue>
+      <Page>Yeah, but it's Slate's definition of a boring date. Makes sense Gossan and Slate never dated.</Page>      
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>That and the whole mishap with Gossan's eye.</Text>
+        <DialogueTarget>Gossan1</DialogueTarget>
+      </DialogueOption>                              
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong3B</Name>
+    <Dialogue>
+      <Page>Right? It's kind of nice!</Page>           
+    </Dialogue>   
+    <DialogueTarget>Merge</DialogueTarget> 
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong3C</Name>
+    <Dialogue>
+      <Page>Hopefully not. Besides, an extra version of us is definitely better than if we'd created an extra anglerfish or something.</Page>      
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>GEH.</Text>
+        <DialogueTarget>Wrong4A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>That's setting the bar pretty low.</Text>
+        <DialogueTarget>Wrong4B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Agreed. We're charming and have fewer teeth.</Text>
+        <DialogueTarget>Wrong4C</DialogueTarget>
+      </DialogueOption>                               
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Gossan1</Name>
+    <Dialogue>
+      <Page>Oof. Yes. The eye thing.</Page>
+      <Page>Yeah, that's... yeah.</Page>       
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Yep.</Text>
+        <DialogueTarget>Segue1A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Sure is.</Text>
+        <DialogueTarget>Segue1A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I very much do not want to discuss that.</Text>
+        <DialogueTarget>Segue1B</DialogueTarget>
+      </DialogueOption>                              
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong4A</Name>
+    <Dialogue>
+      <Page>My thoughts exactly.</Page>           
+    </Dialogue>   
+    <DialogueTarget>Segue2B</DialogueTarget> 
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong4B</Name>
+    <Dialogue>
+      <Page>That's not just setting the bar low, that's setting it at tripping height.</Page>          
+    </Dialogue>  
+    <DialogueTarget>Segue2B</DialogueTarget>   
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Wrong4C</Name>
+    <Dialogue>
+      <Page>That probably counts for something.</Page>        
+    </Dialogue>   
+    <DialogueTarget>Segue2B</DialogueTarget>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Segue1A</Name>
+    <Dialogue>
+      <Page>Uh huh.</Page>            
+    </Dialogue>   
+    <DialogueTarget>Segue2A</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Segue1B</Name>
+    <Dialogue>
+      <Page>Nor do I. Hasty segue?</Page>            
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Hasty segue.</Text>
+        <DialogueTarget>Segue2B</DialogueTarget>
+      </DialogueOption>                              
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Segue2A</Name>
+    <Dialogue>
+      <Page>Quickly changing the subject, you know how I - er, <![CDATA[<i>we</i>]]> - jumped into the black hole that opened up at the end of the last time loop?</Page>
+      <Page>What do you think would happen if you don't jump in this time?</Page>    
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Huh. That's a good question.</Text>
+        <DialogueTarget>Merge2A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>If I don't, then where did you come from?</Text>
+        <DialogueTarget>Merge2B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Guess we'll find out!</Text>
+        <DialogueTarget>Merge2C</DialogueTarget>
+      </DialogueOption>                              
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Segue2B</Name>
+    <Dialogue>
+      <Page>So hey, what do you think happens if you don't jump into the black hole again at the end of this loop?</Page>      
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Huh. That's a good question.</Text>
+        <DialogueTarget>Merge2A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>If I don't, then where did you come from?</Text>
+        <DialogueTarget>Merge2B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Guess we'll find out!</Text>
+        <DialogueTarget>Merge2C</DialogueTarget>
+      </DialogueOption>                              
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Merge1B</Name>
+    <Dialogue>
+      <Page>I think so, at least. Although here's a question for you — what do you think happens if you don't jump into the black hole again at the end of this loop?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Huh. That's a good question.</Text>
+        <DialogueTarget>Merge2A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>If I don't, then where did you come from?</Text>
+        <DialogueTarget>Merge2B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Guess we'll find out!</Text>
+        <DialogueTarget>Merge2C</DialogueTarget>
+      </DialogueOption>                              
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Merge</Name>
+    <Dialogue>
+      <Page>Hey, what do you think happens if you don't jump into the black hole again at the end of this loop?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Huh. That's a good question.</Text>
+        <DialogueTarget>Merge2A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>If I don't, then where did you come from?</Text>
+        <DialogueTarget>Merge2B</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Guess we'll find out!</Text>
+        <DialogueTarget>Merge2C</DialogueTarget>
+      </DialogueOption>                              
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Merge2A</Name>
+    <Dialogue>
+      <Page>It's something I've been wondering about. We're in thoroughly uncharted territory at this point.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Unlike all the other time manipulation we've experienced.</Text>
+        <DialogueTarget>Sass</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Truly, we are the Feldspar of weird time stuff.</Text>
+        <DialogueTarget>Merge3A</DialogueTarget>
+      </DialogueOption>                             
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Merge2B</Name>
+    <Dialogue>
+      <Page>That's a good point.</Page>
+      <Page>I mean, I <![CDATA[<i>feel</i>]]> as real as ever, so I don't think I'm a figment of your imagination or anything like that.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>That's just what a figment of my imagination would say!</Text>
+        <DialogueTarget>Sass</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I'm no expert, but you seem pretty real to me.</Text>
+        <DialogueTarget>Real</DialogueTarget>
+      </DialogueOption>                             
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Merge2C</Name>
+    <Dialogue>
+      <Page>I guess so!</Page>           
+    </Dialogue>  
+    <DialogueTarget>IntroEnd</DialogueTarget>  
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Merge3A</Name>
+    <Dialogue>
+      <Page>Oh geez, Feldspar would just use the time loop to try increasingly outlandish stunts, wouldn't they. Might be a good thing they aren't aware of it.</Page>           
+    </Dialogue>  
+    <DialogueTarget>IntroEnd</DialogueTarget>  
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Real</Name>
+    <Dialogue>
+      <Page>Thanks. You seem real to me, too, so... I guess there's just two of us now!</Page>            
+    </Dialogue>  
+    <DialogueTarget>IntroEnd</DialogueTarget> 
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Sass</Name>
+    <Dialogue>
+      <Page>Are you being sassy? You can't sass me! You <![CDATA[<i>are</i>]]> me!</Page>
+      <Page>Does kind of prove we're the same person, though.</Page> 
+    </Dialogue>
+    <DialogueTarget>IntroEnd</DialogueTarget>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>IntroEnd</Name>
+    <Dialogue>
+      <Page>At any rate, it's been good talking to you, me. <![CDATA[<Pause/>]]> ...Incredibly strange, but good.</Page>
+      <Page>See you around!</Page>           
+    </Dialogue>   
+  </DialogueNode>
+ 
+  <DialogueNode>
+    <Name>Panic1</Name>
+    <Dialogue>
+      <Page>What have we done?! Jumping into that black hole was a <![CDATA[<i>terrible</i>]]> idea!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Yes. Yes, it was.</Text>
+        <DialogueTarget>Start</DialogueTarget>
+        <ConditionToCancel>PLAYER_TIMECLONE_FREAKOUT</ConditionToCancel>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I needed to know what would happen.</Text>
+        <DialogueTarget>PanicRedirect1</DialogueTarget>
+        <ConditionToCancel>PLAYER_TIMECLONE_FREAKOUT</ConditionToCancel>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>AAAAAAAAAAAAHHH!</Text>
+        <DialogueTarget>Panic2</DialogueTarget>
+      </DialogueOption>                           
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>PanicRedirect1</Name>
+    <Dialogue>
+      <Page>...Okay. Okay, I'm calm.</Page>
+    </Dialogue>
+    <DialogueTarget>Start</DialogueTarget>
+  </DialogueNode>
+
+
+  <DialogueNode>
+    <Name>Panic2</Name>
+    <Dialogue>
+      <Page>AAAAAAAAAAAAHHH!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Just needed to get that out of my system.</Text>
+        <DialogueTarget>PanicRedirect2</DialogueTarget>
+        <ConditionToCancel>PLAYER_TIMECLONE_FREAKOUT</ConditionToCancel>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>AAAAAAAAAAAAAAAHHH!</Text>
+        <DialogueTarget>Panic3</DialogueTarget>
+      </DialogueOption>                           
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>PanicRedirect2</Name>
+    <Dialogue>
+      <Page>AAAAAAAAHHHhhhokay, I'm done screaming, too.</Page>
+    </Dialogue>
+    <DialogueTarget>Start</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Panic3</Name>
+    <Dialogue>
+      <Page>AAAAAAAAAAAAAAAHHH! <![CDATA[<b>AAAAAAAAAAAAAAAAAAAHHH!</b>]]></Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>AAAAAaaaAAAAAaAAaaaaaHHH!</Text>
+        <DialogueTarget>Panic4A</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>WAAAAAAAAAAAUUUUUUUUUUGH!</Text>
+        <DialogueTarget>Panic4B</DialogueTarget>
+      </DialogueOption>                           
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Panic4A</Name>
+    <Dialogue>
+      <Page>AAA<![CDATA[<b>AAaaaAA</b>]]>AAAaAAaaa<![CDATA[<b>aaAAAHHH</b>]]>!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text><![CDATA[<i>AAAAAAAAAAAAAAAAAUGHHHH!</i>]]></Text>
+        <DialogueTarget>Panic6</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>AAAAAAaaah... hhh... ha.</Text>
+        <DialogueTarget>Panic5</DialogueTarget>
+        <ConditionToCancel>PLAYER_TIMECLONE_FREAKOUT</ConditionToCancel>
+      </DialogueOption>                           
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Panic4B</Name>
+    <Dialogue>
+      <Page><![CDATA[<b>WAAAAAAAAAAAAAAAAAUUUUUUUUUUGH!</b>]]></Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text><![CDATA[<i>WAAAAAAAAAAAAAAURGLHHH!</i>]]></Text>
+        <DialogueTarget>Panic6</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>AAAAAAaaah... hhh... ha.</Text>
+        <DialogueTarget>Panic5</DialogueTarget>
+      </DialogueOption>                           
+    </DialogueOptionsList>
+  </DialogueNode>  
+
+  <DialogueNode>
+    <Name>Panic5</Name>
+    <Dialogue>
+      <Page>AAAAAAAHHHhhh... (pant, pant)<![CDATA[<Pause/>]]>...</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>You good?</Text>
+        <DialogueTarget>PanicRedirect3</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>...AAAAAAH! AAAAAAAAAAAAAHHH!!</Text>
+        <DialogueTarget>Panic6</DialogueTarget>
+        <ConditionToSet>PLAYER_TIMECLONE_FREAKOUT</ConditionToSet>
+      </DialogueOption>                           
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>PanicRedirect3</Name>
+    <Dialogue>
+      <Page>...I'm good.</Page>
+    </Dialogue>
+    <DialogueTarget>Start</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Panic6</Name>
+    <Dialogue>
+      <Page><![CDATA[<size=50>]]>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHH!!<![CDATA[</size>]]></Page>
+    </Dialogue>
+  </DialogueNode>
+
+
+
+  <DialogueNode>
+    <Name>post intro menu</Name>
+    <EntryCondition>ParadoxLoopGOE2</EntryCondition>
+    <Dialogue>
+      <Page>Hey, me.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Remember leaving on our first solo trip?</Text>
+        <DialogueTarget>should be dead</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <RequiredPersistentCondition>FLEW_TO_SS</RequiredPersistentCondition>
+        <Text>Remember landing our ship on the Sun Station?</Text>
+        <DialogueTarget>sun station</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>should be dead</Name>
+    <Dialogue>
+      <Page>Yeah! That feels like ages ago.<![CDATA[\\n\\n]]>We'd have died that first time out if the time loop didn't exist, though. Isn't that weird to think about?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <CancelledCondition>TuffTooSick</CancelledCondition>
+        <Text>Weirder than there being two of us now?</Text>
+        <DialogueTarget>should be dead 2a</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <RequiredPersistentCondition>TuffTooSick</RequiredPersistentCondition>
+        <Text>Weirder than there being two of us now?</Text>
+        <DialogueTarget>should be dead 2b</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>We were disasterously unprepared for space.</Text>
+        <DialogueTarget>should be dead 3</DialogueTarget>
+      </DialogueOption>   
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>should be dead 2b</Name>
+    <Dialogue>
+      <Page>Tuff was right - I AM the worst.</Page>
+    </Dialogue>  
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>should be dead 2a</Name>
+    <Dialogue>
+      <Page>Wow, I guess I AM pretty sarcastic.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>should be dead 3</Name>
+    <Dialogue>
+      <Page>It's unsettling to think about. Especially when you remember even Riebeck survived their first launch.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>sun station</Name>
+    <Dialogue>
+      <Page>YES. I can’t believe no one was around to see that.<![CDATA[\\n\\n]]>We’re probably the best pilot in the space program by now.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Yeah, but we’ve also died more than anyone else.</Text>
+        <DialogueTarget>sun station 2</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Not that anyone else knows it.</Text>
+        <DialogueTarget>sun station 3</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I needed to brag about that to someone a little.</Text>
+        <DialogueTarget>sun station 4</DialogueTarget>
+      </DialogueOption>   
+      <DialogueOption>
+        <Text>Did that technically happen, <![CDATA[<i>with</i>]]> how the time loop works?</Text>
+        <DialogueTarget>sun station 5</DialogueTarget>
+      </DialogueOption> 
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+
+  <DialogueNode>
+    <Name>sun station 2</Name>
+    <Dialogue>
+      <Page>That’s true. <![CDATA[<Pause>]]> I’m not sure how to factor that in.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>sun station 3</Name>
+    <Dialogue>
+      <Page>Still, it’s kind of nice to get to say it out loud. Even if it’s just to ourself.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>sun station 4</Name>
+    <Dialogue>
+      <Page>That’s fine. It’s kind of nice to hear it said out loud.</Page>
+    </Dialogue>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>sun station 5</Name>
+    <Dialogue>
+      <Page>What? ...Oh, come on, don’t take that away from us!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Just kidding, I don't care how time works.</Text>
+        <DialogueTarget>sun station 5a</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>But given it only happened in a previous loop...</Text>
+        <DialogueTarget>sun station 5b</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>    
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>sun station 5a</Name>
+    <Dialogue>
+      <Page>Haha, yeah, me either. <![CDATA[<Pause>]]> ...Obviously.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>sun station 5b</Name>
+    <Dialogue>
+      <Page>The worst part is we’re the same person, and you know I’m going to agree with you. (Sigh...)</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

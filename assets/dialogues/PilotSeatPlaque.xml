@@ -1,0 +1,11 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>This pilot seat, used by pioneering astronaut Feldspar, is all that remains of our inaugural flight into space.</Page>
+			<Page>Although it’s been argued such a distinction requires a breathtakingly liberal definition of flight, that day will nevertheless always be remembered as landmark achievement in Hearthian history.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

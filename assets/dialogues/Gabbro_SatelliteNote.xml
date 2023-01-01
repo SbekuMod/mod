@@ -1,0 +1,17 @@
+<DialogueTree>
+  <NameField>RECORDING</NameField>
+  <DialogueNode>
+    <Name>Recording</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <SetPersistentCondition>FoundMapSatellite</SetPersistentCondition>
+    <Dialogue>
+      <Page>Gabbro here, checking in on the deep space satellite per ground control's request to check out a possible equipment problem. See, Hornfels? I do too work!</Page>
+      <Page>You know, I wouldn’t mind being a satellite. It's peaceful out here, among the distant stars and the soft, velvety darkness… Bet it's (yawn) awfully nice for naps, too...</Page>
+      <Page>...</Page>
+      <Page>Oh, right. The lens.</Page>
+      <Page>Alright, little satellite, let's see what the trouble is.</Page>
+      <Page>...Huh. Everything looks a-okay, ground control. No dust or scratches on the lens, and no evidence of sparking or violent explosions. Guess that rules out an equipment malfunction, after all.</Page>
+      <Page>Hear that, pal? You’re in great shape. Keep up the good work out here!</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

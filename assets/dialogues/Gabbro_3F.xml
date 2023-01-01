@@ -1,0 +1,477 @@
+<!--
+Seen if player is meeting Gabbro for first time on LOOP 3 OR LATER
+
+PLAYER LEARNS ABOUT: You’re in a time loop that lasts 20 minutes, and the memory statues are the reason
+-->
+
+<DialogueTree>
+	<NameField>Gabbro</NameField>
+	
+	<DialogueNode>
+		<Name>MeetGabbro3F</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Nice, it’s you. Good to see you made it here in one piece. The first solo launch is a doozy, isn’t it?</Page>
+			<Page>So hey, don’t freak out or anything, but lately I keep, like, dying repeatedly. I dunno, it’s pretty weird.</Page>
+			<Page>What about you? Have you died lately, or is it just me?</Page>
+		</Dialogue>
+		<RevealFacts><FactID>GD_GABBRO_ISLAND_X0</FactID></RevealFacts>
+		<SetCondition>SaidHiToGabbro</SetCondition>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>No, it’s me, too. We’re in a time loop.</Text>
+				<DialogueTarget>Gabbro3F_2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Gabbro3F_2</Name>
+		<Dialogue>
+			<Page>Time <![CDATA[<i>]]>has<![CDATA[</i>]]> been behaving unusually lately. Yeah, a time loop makes sense. Cool.</Page>
+		</Dialogue>
+		<RevealFacts><FactID>GD_GABBRO_ISLAND_X3</FactID></RevealFacts>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>You’re taking this pretty well.</Text>
+				<DialogueTarget>Gabbro3F_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What did you think it was?</Text>
+				<DialogueTarget>Gabbro3F_4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Gabbro3F_3</Name>
+		<Dialogue>
+			<Page>Heh, right back at you.</Page>
+			<Page>Personally, I like new experiences, and I’ve never been in a time loop before. I mean, I don’t <![CDATA[<i>]]>think<![CDATA[</i>]]> I’ve been in a time loop before this one.</Page>
+		</Dialogue>
+		<DialogueTarget>Gabbro3F_5</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Gabbro3F_4</Name>
+		<Dialogue>
+			<Page>I figured it’d be some kind of fidgety time business, but I wasn’t really thinking about what’s happening to the shape of time, you know? But a loop makes sense here. Let’s go with “loop” for now.</Page>
+		</Dialogue>
+		<DialogueTarget>Gabbro3F_5</DialogueTarget>
+	</DialogueNode>		
+
+	<DialogueNode>
+		<Name>Gabbro3F_5</Name>
+		<Dialogue>
+			<Page>It looks like you and I are the only ones who can tell that time’s gone all weird. I tried radioing Hornfels and asking if they’d died, too, but they thought I was being metaphorical.</Page>
+			<Page>Even if I tell Hornfels about the time loop, they never remember by the next one. They don’t realize anything’s different.</Page>
+			<Page>And here’s another weird one for you - every time I die, all of my memories from that loop replay back to me. I’m pretty sure that’s related to this big stone Nomai statue I found on one of the other islands.</Page>
+			<Page>I was looking at it, and the statue opened its eyes and started glowing. It replayed my memories like it’d seen them through my own eyes, just like what happens each time I die.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>GD_STATUE_ISLAND_R1</FactID>
+			<FactID>GD_GABBRO_ISLAND_X1</FactID>
+			<FactID>GD_GABBRO_ISLAND_X2</FactID>
+		</RevealFacts>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>That happened to me with the statue at the museum.</Text>
+				<DialogueTarget>Gabbro3F_6</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Gabbro3F_6</Name>
+		<Dialogue>
+			<Page>You too, huh? Then the Nomai statues must have something to do with why we’re the only ones aware of the time loop. So... no glowing statue, no time loop awareness?</Page>
+			<Page>I think that’s going to be my leading theory, but if you find out anything new about the statues or the time loop, let me know, okay? I’ll be here.</Page>
+			<Page>Anyway, that’s what’s new with me. But hey, this is your first solo voyage! ...Kind of! Let’s talk about you, you know?</Page>
+		</Dialogue>
+		<SetCondition>SaidHiToGabbro</SetCondition>
+		<DialogueTarget>GabbroMenu</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Gabbro3F_Secondary</Name>
+		<EntryCondition>SaidHiToGabbro</EntryCondition>
+		<Dialogue>
+			<Page>Have you ever watched a cyclone for so long, it started to hypnotize you? I’m telling you, they’ll put you in a trance if you stare at ’em long enough.</Page>
+		</Dialogue>
+		<DialogueTarget>GabbroMenu</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>GabbroMenu</Name>
+		<Dialogue>
+			<Page>How’s space treating you?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I found something!</Text>
+				<DialogueTarget>FoundSomethingMenu</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What are you doing out here?</Text>
+				<DialogueTarget>WhatAreYouDoing_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Where should I explore on Giant’s Deep?</Text>
+				<DialogueTarget>WhereToExplore_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What’s up with this planet?</Text>
+				<DialogueTarget>ThisPlanet_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<CancelledPersistentCondition>AskedGabbroForHisShip</CancelledPersistentCondition>
+				<CancelledPersistentCondition>FoundGabbroShip</CancelledPersistentCondition>
+				<Text>Where’s your ship?</Text>
+				<DialogueTarget>GabbrosShip</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredPersistentCondition>AskedGabbroForHisShip</RequiredPersistentCondition>
+				<CancelledPersistentCondition>FoundGabbroShip</CancelledPersistentCondition>
+				<Text>Where’s your ship?</Text>
+				<DialogueTarget>GabbrosShip2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredPersistentCondition>FoundGabbroShip</RequiredPersistentCondition>
+				<CancelledPersistentCondition>ToldGabbroAboutHisShip</CancelledPersistentCondition>
+				<Text>I found your ship!</Text>
+				<DialogueTarget>GabbrosShip3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredPersistentCondition>FoundGabbroShip</RequiredPersistentCondition>
+				<RequiredPersistentCondition>ToldGabbroAboutHisShip</RequiredPersistentCondition>
+				<CancelledCondition>ToldGabbroAboutHisShipThisLoop</CancelledCondition>
+				<Text>I saw your ship again.</Text>
+				<DialogueTarget>GabbrosShip4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>Goodbye</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>WhatAreYouDoing_3F</Name>
+		<Dialogue>
+			<Page>Well, what are any of us doing here, really?</Page>
+			<Page>...Nah, I’m just kidding. I’m out here exploring our solar system, same as you.</Page>
+			<Page>But I tell you what, outer space really gives you room to think. It’s quiet and peaceful out here.</Page>
+			<Page>I mean, it’s usually quiet and peaceful. Sometimes a cyclone comes by and lifts my little island paradise clean out of the water. Then: less peaceful.</Page>
+		</Dialogue>
+		<DialogueTarget>GabbroMenu</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>WhereToExplore_3F</Name>
+		<Dialogue>
+			<Page>Here’s something you might like — I keep seeing a bright flash in the sky at the start of every loop. Something must be happening up there in orbit around the planet.</Page>
+			<Page>What else, what else... Have you been to Statue Island? That’s what I’ve been calling it, seeing as it’s the <![CDATA[<i>]]>island<![CDATA[</i>]]> where I found the glowing Nomai <![CDATA[<i>]]>statue<![CDATA[</i>]]>.<![CDATA[<Pause>]]> ...Get it?</Page>
+			<Page>I was on the beach on Statue Island when the whole glowy business happened, by the way. It’s a nice beach for that kind of thing. I give it a solid 7 out of 10 on the Gabbro Relaxation Scale.</Page>
+			<Page>If you feel like checking out Statue Island, it’s the one with two islands connected by a natural rock arch. Well... mostly connected, anyway. You’ll see.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>GD_STATUE_ISLAND_R1</FactID>
+			<FactID>GD_STATUE_ISLAND_R2</FactID>
+			<FactID>ORBITAL_PROBE_CANNON_R3</FactID>
+		</RevealFacts>
+		<DialogueTarget>GabbroMenu</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ThisPlanet_3F</Name>
+		<Dialogue>
+			<Page>Haha, I know, right?</Page>
+			<Page>...Oh, you meant, like, tell you more about it? I gotcha. Well, Giant’s Deep is massive, and mostly water. No surprises there.</Page>
+			<Page>There’s a strong current a ways beneath the surface that prevents anything from sinking below it. Seriously, I tried everything I could think of to get past that current, and neither idea worked.</Page>
+			<Page>As for land masses, I’ve counted four islands, including this one. There’s also the one with that Nomai statue I saw on the beach.</Page>
+			<Page>You’ve seen the cyclones? Yeah, they’re hard to miss. They’ll toss up everything in their path, islands included. Little tip — if you get picked up, try to land in water. Less likely to kill you.</Page>
+		</Dialogue>
+		<RevealFacts><FactID>GD_OCEAN_R1</FactID></RevealFacts>
+		<DialogueTarget>GabbroMenu</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>GabbrosShip</Name>
+		<Dialogue>
+			<Page>That’s a good question.</Page>
+			<Page>It’s definitely on this planet <![CDATA[<i>]]>some<![CDATA[</i>]]>where. I mean, unless a cyclone came by and tossed it into space, I guess. Heh, that would be pretty nuts.</Page>
+			<Page>I hope it’s not lonely.</Page>
+		</Dialogue>
+		<SetPersistentCondition>AskedGabbroForHisShip</SetPersistentCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>GabbrosShip2</Name>
+		<Dialogue>
+			<Page>An excellent question. I haven’t seen it around lately.</Page>
+			<Page>I hope it’s not lonely.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>GabbrosShip3</Name>
+		<Dialogue>
+			<Page>Oh, cool. So it’s floating in the ocean, huh?</Page>
+			<Page>Did it look like it was having a good time?</Page>
+		</Dialogue>
+		<SetPersistentCondition>ToldGabbroAboutHisShip</SetPersistentCondition>
+		<SetCondition>ToldGabbroAboutHisShipThisLoop</SetCondition>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>GabbrosShip4</Name>
+		<Dialogue>
+			<Page>I hope it’s having fun! Did you say hi for me?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Goodbye</Name>
+		<Dialogue>
+			<Page>Cool, cool. Take it easy out there.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+<!--
+	THIS IS THE CONDITIONAL DISCOVERY MENU
+-->
+
+	<DialogueNode>
+		<Name>FoundSomethingMenu</Name>
+		<Dialogue>
+			<Page>Nice, nice. Whatcha got for me?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredLogCondition>GD_STATUE_WORKSHOP_X1</RequiredLogCondition>
+				<Text>I reached the inside of Statue Island.</Text>
+				<DialogueTarget>FoundSomething1_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>TT_TIME_LOOP_DEVICE_X3</RequiredLogCondition>
+				<Text>I found the source of the time loop.</Text>
+				<DialogueTarget>FoundSomething2_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>TT_TIME_LOOP_DEVICE_X2</RequiredLogCondition>
+				<Text>I found Nomai masks inside the Ash Twin Project.</Text>
+				<DialogueTarget>FoundSomething3_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>ORBITAL_PROBE_CANNON_X3</RequiredLogCondition>
+				<Text>I found what happened to the Orbital Probe Cannon.</Text>
+				<DialogueTarget>FoundSomething4_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>TH_QUANTUM_SHARD_X2</RequiredLogCondition>
+				<Text>I found your quantum poem.</Text>
+				<DialogueTarget>FoundSomething5_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
+				<CancelledPersistentCondition>AskedGabbroAboutRadioTower</CancelledPersistentCondition>
+				<Text>I found a photo of you inside the old radio tower.</Text>
+				<DialogueTarget>FoundSomething6Base</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
+				<RequiredPersistentCondition>AskedGabbroAboutRadioTower</RequiredPersistentCondition>
+				<Text>I found a photo of you inside the old radio tower.</Text>
+				<DialogueTarget>FoundSomething6Again</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Actually, nevermind.</Text>
+				<DialogueTarget>FoundSomethingExit</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething1_3F</Name>
+		<!-- First time you tell them -->
+		<Dialogue>
+			<Page>So the Nomai created those head statues to record memories, huh? ...Yeah, I could see the Nomai doing that. Not sure what for, but it seems like their sort of thing.</Page>
+			<Page>Do you think the statues are recording our memories, then? ’Cause I remember that one on the beach looked at me funny. That must be my memory-friend!</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething1b</Name>
+		<!-- Second time you tell them:-->
+		<Dialogue>
+			<Page>Right, right, the cavern inside Statue Island is where the memory-recording statues were made, I remember.</Page>
+			<Page>So your memory statue is the one in the museum back in the crater, and mine’s the one I found on the beach. I kinda dig having my own personal memory-friend.</Page>
+			<Page>If you come up with any hunches about what the Nomai wanted to record memories for, feel free to run them by me! You know where I’ll be.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething2_3F</Name>
+		<!-- First time you tell them -->
+		<Dialogue>
+			<Page>Wait, whoa, really? The Nomai carved out Ash Twin and built a time loop device inside? ...That is <![CDATA[<i>]]>wild<![CDATA[</i>]]>.</Page>
+			<Page>Now we know what’s causing the loop, then. And... if it’s caused by a device, that must mean it had to be switched on, right? Huh...</Page>
+			<Page>Hey, what do you think would happen if you turned off the time loop? Like, there’s a part of me thinks maybe you shouldn’t, what with the sun blowing up and all.</Page>
+			<Page>Then again, who wants to spend eternity being blown up by the sun?</Page>
+			<Page>...I dunno, I’m no time loop expert. I’m just gonna sit here and ponder the intricacies of time and space. Maybe take a nap, too, if I feel like it.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething2b</Name>
+		<!-- Second time you tell them:-->
+		<Dialogue>
+			<Page>My head’s still all full of scenarios for what would happen if you turned off the time loop. I’ll probably notice if you decide to mess with it, though, right? Seems like something I’d notice.</Page>
+			<Page>This is all pretty wild.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething3_3F</Name>
+		<!-- First time you tell them -->
+		<Dialogue>
+			<Page>You’re saying the statues were made so memories could be sent back in time? I guess that makes sense, considering we both have our memories of every loop we’ve gone through.</Page>
+			<Page>Wait, then it’s just our memories being sent back in time to us, right? Then... are we really experiencing multiple time loops, or not?</Page>
+			<Page>That’s pretty deep... Like, maybe our consciousnesses have been through all these loops, but maybe our bodies haven’t, because technically the loops never happened.</Page>
+			<Page>Meaning we’re receiving memories of things that will never happen to us. Cool, huh?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething3b</Name>
+		<!-- Second time you tell them:-->
+		<Dialogue>
+			<Page>Right, you told me earlier that the point of the statues is to send memories back in time. Which I guess makes sense, considering we both have our memories of every loop we’ve gone through.</Page>
+			<Page>I thought about it some more, and I think that means our minds have gone through all these loops, but we haven’t actually gone through them ourselves.</Page>
+			<Page>Meaning we’re receiving memories of things that technically will never happen to us. Cool, huh?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething4_3F</Name>
+		<!-- First time you tell them -->
+		<Dialogue>
+			<Page>Whoa, that’s the cannon breaking apart at the start of each time loop? For real?</Page>
+			<Page>Did you figure out why?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Too much power.</Text>
+				<DialogueTarget>FoundSomething4FollowUp_3F</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Overenthusiasm.</Text>
+				<DialogueTarget>FoundSomething4FollowUp_3F</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething4FollowUp_3F</Name>
+		<Dialogue>
+			<Page>...It’s kind of scary how much that sounds like something Slate or Feldspar would do. I’m pretty surprised the Nomai built something that actually broke!</Page>
+			<Page>Come to think of it, though, “broke” might be the wrong word. Because it looks like the Orbital Probe Cannon is still firing successfully at the beginning of each time loop.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething4b_3F</Name>
+		<!-- Second time you tell them:-->
+		<Dialogue>
+			<Page>So the cannon breaks apart right after it launches, huh. Explains what I’m seeing fall from the sky every loop.</Page>
+			<Page>I’m still surprised the Nomai built something that isn’t holding together, you know? Them being genius crafters and all.</Page>
+			<Page>On the other hand, maybe we should be impressed they made something that could last until modern day in the first place. And it looks like the cannon is still firing successfully at the start of each time loop.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething5_3F</Name>
+		<!-- First time you tell them -->
+		<Dialogue>
+			<Page>Yeah, the one in the woods, I remember writing that. Pretty fun, right? It works out to a good 24 poems.</Page>
+			<Page>When I’m done exploring, I want to make some more quantum art. Maybe some kind of creature sculpture that just, like, shows up and scares the daylights out of you.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething6Again</Name>
+		<Dialogue>
+			<Page>Yeah, you mentioned that before. Did I look busy in it? I hope I looked busy.</Page>
+		</Dialogue>
+		<DialogueTarget>FoundSomething6</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething6Base</Name>
+		<Dialogue>
+			<Page>Nice. Did I look busy in it? I hope I looked busy.</Page>
+		</Dialogue>
+		<SetPersistentCondition>AskedGabbroAboutRadioTower</SetPersistentCondition>
+		<DialogueTarget>FoundSomething6</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething6</Name>
+		<Dialogue>
+			<Page>Must have been from the time Hornfels sent me to check on the deep space satellite. They thought Ol’ Spacey might be malfunctioning, but I couldn’t find a single thing wrong with it.</Page>
+			<Page>Which is probably how it got a shot of my beautiful be-helmeted face, come to think of it.</Page>
+			<Page>I always thought it was kinda sweet that the best way to find Ol’ Spacey is to use a map that’s generated by the satellite itself, isn’t it? Like it’s inviting us to visit. Good ol’ deep space satellite, always making sure we know where we’re going.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Why’d Hornfels think it was broken?</Text>
+				<DialogueTarget>FoundSomething6a</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Um. “Ol’ Spacey”?</Text>
+				<DialogueTarget>FoundSomething6b</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I have a map?!</Text>
+				<DialogueTarget>FoundSomething6c</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething6a</Name>
+		<Dialogue>
+			<Page>Dunno. Hornfels probably told me why, but Hornfels tells me lots of things, and sometimes I tune out. Or pretend there’s signal interference and I can’t hear them.</Page>
+			<Page>Best guess says the deep space satellite must have sent Timber Hearth some weird pictures, but like… what’s considered “weird” for a satellite, you know?</Page>
+			<Page>Anyway, if you ever want to visit Ol’ Spacey, fastest way is to jump into your ship and use your solar system map to lock on to the satellite, same as you would any astral body.</Page>
+		</Dialogue>
+		<SetCondition>MAP_PROMPT_REMINDER</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething6b</Name>
+		<Dialogue>
+			<Page>I mean, the satellite’s not <![CDATA[<i>]]>super<![CDATA[</i>]]> old, but it’s hardly brand-new. “Ol’” is more a term of affection. ...You’re being very literal-minded about this.</Page>
+			<Page>Ol’ Spacey likes visitors, you know! Fastest way to find it is to jump into your ship and use your solar system map to lock on to our faithful satellite friend, same as you would any astral body.</Page>
+		</Dialogue>
+		<SetCondition>MAP_PROMPT_REMINDER</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething6c</Name>
+		<Dialogue>
+			<Page>Yeah, um, the one that’s standard with all our spacesuits? The one you have with you at all times that opens with the press of a button? …That map?</Page>
+			<Page>You didn’t get conked on the head by a rock or a meteorite or something on your way here, did you? No shame in that. Happens to me all the time!</Page>
+			<Page>In case you were hit especially hard, don’t forget that you can jump into your ship and use your solar system map to lock on to any astral body. It’s the easiest way to visit Ol’ Spacey, too.</Page>
+		</Dialogue>
+		<SetCondition>MAP_PROMPT_ATTENTION</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomethingExit</Name>
+		<Dialogue>
+			<Page>No worries. Feel free to let me know when you do find something cool, though. You know where to find me.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

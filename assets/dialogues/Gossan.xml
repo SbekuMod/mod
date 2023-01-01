@@ -1,0 +1,219 @@
+<DialogueTree>
+	<NameField>Gossan</NameField>
+
+	<DialogueNode>
+		<Name>Coach1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hey, I thought I might see you before the big launch.</Page>
+			<Page>Nerves getting the better of you?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Right, like you weren’t nervous for your first flight.</Text>
+				<DialogueTarget>Coach2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I’m a little nervous, yeah.</Text>
+				<DialogueTarget>Coach3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Are you kidding? I’m a natural at this!</Text>
+				<DialogueTarget>Coach4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>BUTTON_ACHIEVEMENT_PRE_ZERO_G</Text>
+				<DialogueTarget>BUTTON_ACHIEVEMENT_MENU_4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach2</Name>
+		<Dialogue>
+			<Page>Hey, don’t worry about it. Your nerves are between you, me, and the vast endlessness of space.</Page>
+			<Page>But really, you’ll do fine out there. I’d worry more about that ship, if I were you. Hopefully that lunatic Slate at least fixed the retro rockets.</Page>
+		</Dialogue>
+		<DialogueTarget>Coach8</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Coach3</Name>
+		<Dialogue>
+			<Page>Good. Everyone should be a bit nervous going into space. I got cocky during my first flight and nearly put a new crater in the moon.</Page>
+			<Page>Still, I was never as green as you.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Hey, I’ve gotten better!</Text>
+				<DialogueTarget>Coach6</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>That’s not what Slate says...</Text>
+				<DialogueTarget>Coach5</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach4</Name>
+		<Dialogue>
+			<Page>Is that so? Funny, I seem to recall the first time you strapped on a jetpack, we had to come fish you out of the crater near the south pole.</Page>
+		</Dialogue>
+		<DialogueTarget>Coach8</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach5</Name>
+		<Dialogue>
+			<Page>Oi, you know better than to believe a word that lunatic says about me.</Page>
+			<Page>They’re still sore I made them install a safety harness in the cockpit. Claimed it would “throw off the thrust-to-weight ratio.”</Page>
+			<Page>Honestly. One of these days I’m gonna throw off <![CDATA[<i>Slate’s</i>]]> thrust-to-weight ratio.</Page>
+		</Dialogue>
+		<DialogueTarget>Coach8</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach6</Name>
+		<Dialogue>
+			<Page>Think so, do you? Feel like proving it to your old flight coach?</Page>
+		</Dialogue>
+		<DialogueTarget>Coach7</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach7</Name>
+		<Dialogue>
+			<Page>There’s a “satellite” — which is definitely <![CDATA[<i>not</i>]]> just a piece of broken mining equipment — set up down in the zero-g cave and in need of repairs.</Page>
+			<Page>If you’re looking for a little last-minute zero-g practice, head down the lift and into the cave. Or don’t, so long as you’re confident you can make ship repairs in space.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>One repaired “satellite,” coming up!</Text>
+				<DialogueTarget>Coach9</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Nah, I’m ready for the real deal.</Text>
+				<DialogueTarget>Coach10</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach8</Name>
+		<Dialogue>
+			<Page>So listen, there’s a “satellite” — which is definitely <![CDATA[<i>not</i>]]> just a piece of broken mining equipment — set up down in the zero-g cave and in need of repairs.</Page>
+			<Page>If you’re looking for a little last-minute zero-g practice, head down the lift and into the cave. Or don’t, so long as you’re confident you can make ship repairs in space.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>One repaired “satellite”, coming up!</Text>
+				<DialogueTarget>Coach9</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Nah, I’m ready for the real deal.</Text>
+				<DialogueTarget>Coach10</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach9</Name>
+		<Dialogue>
+			<Page>Cool. Get to it, and try not to concuss yourself right before your first launch.</Page>
+		</Dialogue>
+		<SetCondition>CoachSaysHi_1</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach10</Name>
+		<Dialogue>
+			<Page>Heh. Darn right you are.</Page>
+			<Page>Don’t get yourself killed out there, you hear? Not after I’ve put this much work into training you.</Page>
+			<Page>...Haha, go on, go make Outer Wilds Ventures proud.</Page>
+		</Dialogue>
+		<SetCondition>CoachSaysHi_2</SetCondition>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>Coach11</Name>
+		<EntryCondition>CoachSaysHi_2</EntryCondition>
+		<Dialogue>
+			<Page>If you changed your mind about practicing ship repairs, head down the lift and into the zero-g cave.</Page>
+			<Page>You just need to maneuver over to the “satellite” and repair each damaged area, same as you’ll be doing for your ship.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Coach12</Name>
+		<EntryCondition>CoachSaysHi_1</EntryCondition>
+		<Dialogue>
+			<Page>What’s the holdup? That “satellite” isn’t going to repair itself.</Page>
+			<Page>You just need to maneuver over to the “satellite” and repair each damaged area, same as you’ll be doing for your ship.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>PostZeroG</Name>
+		<EntryCondition>PostZeroG</EntryCondition>
+		<Dialogue>
+			<Page>Nicely done! Of course, it’ll be a little more stressful when you’re hurtling through space, but just remember your training and try not to hit anything big.</Page>
+			<Page>I can see you’re itching to get off this rock, so go get the <![CDATA[<color=orange>launch codes from the observatory</color>]]> and get out of here already.</Page>
+			<Page>Best of luck out there! And hey, try to avoid getting yourself killed now that I’ve put so much time into training you, got it?</Page>
+		</Dialogue>
+		<DialogueTarget>BUTTON_ACHIEVEMENT_MENU_4</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>BUTTON_ACHIEVEMENT_MENU_4</Name>
+		<Dialogue>
+			<Page>BUTTON_ACHIEVEMENT_9</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>BUTTON_ACHIEVEMENT_10</Text>
+				<DialogueTarget>BUTTON_ACHIEVEMENT_MENU_5</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>RIGIDBODY_ACHIEVEMENT_1</Text>
+				<DialogueTarget>RIGIDBODY_ACHIEVEMENT_MENU_1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+		
+	<DialogueNode>
+		<Name>RIGIDBODY_ACHIEVEMENT_MENU_1</Name>
+		<Dialogue>
+			<Page>RIGIDBODY_ACHIEVEMENT_2</Page>
+			<Page>RIGIDBODY_ACHIEVEMENT_3</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>BUTTON_ACHIEVEMENT_MENU_5</Name>
+		<Dialogue>
+			<Page>BUTTON_ACHIEVEMENT_11</Page>
+			<Page>BUTTON_ACHIEVEMENT_12</Page>
+			<Page>BUTTON_ACHIEVEMENT_13</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CoachSpace</Name>
+		<EntryCondition>Space</EntryCondition>
+		<Dialogue>
+			<Page>You’re back awfully soon. Everything alright? Slate didn’t do anything dumb like install a self-destruct button, did they?</Page>
+		</Dialogue>
+		<DialogueTarget>BUTTON_ACHIEVEMENT_MENU_4</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>NoSuit</Name>
+		<EntryCondition>NoSuit</EntryCondition>
+		<Dialogue>
+			<Page>Oi, don’t forget to put on a suit! I don’t want to have to come fish you out of there again.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

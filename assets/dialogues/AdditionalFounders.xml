@@ -1,0 +1,18 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Big thanks to these additional founding members of Outer Wilds Ventures, without whom we would never have gotten off the ground:</Page>
+			<Page>Matthew Steinhauer</Page>
+			<Page>Ben Etherington</Page>
+			<Page>QwertyuiopThePie</Page>
+			<Page>Jordan Frith</Page>
+			<Page>Tom Cummings</Page>
+			<Page>Sean "sharktemplar" Farrell</Page>
+			<Page>Steven Ursell</Page>
+			<Page>Ryan / Ohmwrecker</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

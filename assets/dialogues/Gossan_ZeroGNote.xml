@@ -1,0 +1,15 @@
+
+<!-- This document was created with Syntext Serna Free. -->
+<DialogueTree>
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>
+        Hey! Come say hi to your old flight coach before your launch. I’ve got zero-g training set up if you want a refresher.<![CDATA[\\n\\n]]>-Gossan
+      </Page>
+    </Dialogue>
+    <RevealFacts><FactID>TH_ZERO_G_CAVE_R1</FactID></RevealFacts>
+  </DialogueNode>
+</DialogueTree>

@@ -1,0 +1,13 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hornfel’s Observations</Page>
+			<Page>This is incredible! At first I thought the points of light in this image were stars, but they’re not... they’re <![CDATA[<i>]]>galaxies<![CDATA[</i>]]>!</Page>
+			<Page>And this image covers just a tiny patch of the whole sky, which means the universe contains at least a thousand times more galaxies than we previously imagined.</Page>
+			<Page>I... I think I need to sit down.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

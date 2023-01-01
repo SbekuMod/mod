@@ -1,0 +1,214 @@
+<DialogueTree>
+	<NameField>Tuff</NameField>
+
+	<DialogueNode>
+		<Name>ScaredMiner1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hey, hey. Nice of you to drop down.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I’m getting some zero-g time in.</Text>
+				<DialogueTarget>Zero</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Give me the dirt.</Text>
+				<DialogueTarget>Dirt</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Guess where I’m going today.</Text>
+				<DialogueTarget>Guess</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		<SetCondition>TalkedToTuff</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ScaredMiner2</Name>
+		<EntryCondition>TalkedToTuff</EntryCondition>
+		<Dialogue>
+			<Page>Hey, you’re back. You need something?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Just getting in some zero-g time.</Text>
+				<DialogueTarget>Zero</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Give me the dirt.</Text>
+				<DialogueTarget>Dirt</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Guess where I’m going today.</Text>
+				<DialogueTarget>Guess</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Zero</Name>
+		<Dialogue>
+			<Page>So you’re going in <![CDATA[<i>there</i>]]>? In the cave? Hnnngh... </Page>
+			<Page>What? No, I’m fine. Great. Great and fine.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>You don’t <![CDATA[<i>look</i>]]> fine...</Text>
+				<DialogueTarget>Fine</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Yeah, I’m going to drift around down there for a while.</Text>
+				<DialogueTarget>Sick1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Fine</Name>
+		<Dialogue>
+			<Page>Well you know I hate that cave so I don’t know why you’re making me talk about it.</Page>
+			<Page>Fweh... Now I’ve got hand sweats.</Page>
+		</Dialogue>
+		<SetCondition>ScaredMinerSecondary</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Sick1</Name>
+		<Dialogue>
+			<Page>Eurgh...</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Just going to float upside down and whatnot.</Text>
+				<DialogueTarget>Sick2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>...Sorry. I’ll stop.</Text>
+				<DialogueTarget>Motionless</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Motionless</Name>
+		<Dialogue>
+			<Page>I’m going to sit here and think about flat, motionless rocks for a while.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Sick2</Name>
+		<Dialogue>
+			<Page>H-hurk...</Page>
+		</Dialogue>
+		<SetCondition>TooSick</SetCondition>
+		<SetPersistentCondition>TuffTooSick</SetPersistentCondition>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Just, y’know, ricochet off the walls. Spin around a lot. That kind of thing.</Text>
+				<DialogueTarget>Worst2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>That was too far, wasn’t it.</Text>
+				<DialogueTarget>Worst1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Worst1</Name>
+		<Dialogue>
+			<Page>You’re... <![CDATA[<color=grey>Urp...</color>]]><![CDATA[<Pause/>]]> You’re the worst.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Sorry.</Text>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I know.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Worst2</Name>
+		<Dialogue>
+			<Page>You’re... <![CDATA[<color=grey>Urp...</color>]]><![CDATA[<Pause/>]]> You’re the worst.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I know.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Guess</Name>
+		<Dialogue>
+			<Page>Oh, no. Nooooo, no no no.<![CDATA[<Pause/>]]> No way.</Page>
+			<Page>You want to run off into space, that’s your business, but don’t make me, you know, <![CDATA[<i>think</i>]]> about it.</Page>
+			<Page>Bad enough we got this weird cave down here...</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Dirt</Name>
+		<Dialogue>
+			<Page>Some fresh dirt? Not much happening down here lately. Let me think...</Page>
+			<Page>Come to think of it, Tektite saw something crash outside of the village crater earlier. That’s new and different.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Oh, hey. How ’bout that.</Text>
+				<DialogueTarget>Probe1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Is anything on fire?</Text>
+				<DialogueTarget>Probe2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Probe1</Name>
+		<Dialogue>
+			<Page>Yeah, they were on firewatch with the old scout launcher and saw smoke, so they went to check it out. “Safety first,” right?</Page>
+			<Page>...No, I’m kidding. I said that to Tektite once. Pretty rude how long they laughed for, if you ask me.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Probe2</Name>
+		<Dialogue>
+			<Page>Probably only a little. Tektite checked out the crash site with the old firewatch scout launcher and saw smoke, so they headed over to stamp out any leftover fires.</Page>
+			<Page>Well, I better get back to work. This ore’s not going to mine itself, you know.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>TooSick</Name>
+		<EntryCondition>TooSick</EntryCondition>
+		<Dialogue>
+			<Page>Hurgh...</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Space</Name>
+		<EntryCondition>Space</EntryCondition>
+		<Dialogue>
+			<Page>Oh, I thought I heard you lift off. Change your mind?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I needed a little more zero-g time.</Text>
+				<DialogueTarget>Zero</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Give me the dirt.</Text>
+				<DialogueTarget>Dirt</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+</DialogueTree>

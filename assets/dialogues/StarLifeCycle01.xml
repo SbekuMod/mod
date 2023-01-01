@@ -1,0 +1,11 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Stars like our sun generate light and heat by fusing hydrogen into helium.</Page>
+			<Page>As it grows older, the star runs out of hydrogen and starts to contract.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

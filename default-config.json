@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "settings": {
+    "Carica eventi nel registro della nave": true,
+    "Opzioni di debug": {
+      "type": "separator"
+    },
+    "Effettua dump registro della nave": false,
+    "Effettua dump degli alberi di dialogo": false,
+    "Premi K per ricaricare i dialoghi": false,
+    "Premi U per sbloccare tutti gli eventi": false
+  }
+}

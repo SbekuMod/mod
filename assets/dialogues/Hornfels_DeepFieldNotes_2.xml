@@ -1,0 +1,14 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hmmm, this is odd. According to my redshift calculations, every single galaxy in this image is moving away from us.</Page>
+			<Page>In fact, the farther away a galaxy is, the <![CDATA[<i>]]>faster<![CDATA[</i>]]> it appears to be moving away.</Page>
+			<Page>It’s almost as if the entire universe is expanding.</Page>
+			<Page>But if that’s true, was everything closer together in the past? And how far back can we extrapolate? Did the universe have a beginning?</Page>
+<!-- 			<Page>At this rate of expansion, it won’t be long until all of the galaxies are too far away for us to see. I need to hurry and take more observations!</Page>
+ -->		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

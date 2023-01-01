@@ -1,0 +1,17 @@
+
+<DialogueTree>
+	<NameField>RECORDING</NameField>
+	<DialogueNode>
+		<Name>Riebeck_AttlerockRecording</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+    	<Dialogue>
+			<Page>Okay, wow. <![CDATA[<i>]]>Wow.<![CDATA[</i>]]> I’ve seen this ruin in other travelers’ pictures, but seeing it for myself...</Page>
+			<Page>It’s <![CDATA[<Pause=1><i>]]>really<![CDATA[</i>]]> old, isn’t it?</Page>
+			<Page>But wow, this is the coolest day of my life. ...Okay, um, time for some official notes!</Page>
+			<Page>So this is some kind of Nomai “locator.” It can point out the different planets - which is incredibly cool, by the way - but from what little I can understand of the writing here, I think it was built to try to find something specific?</Page>
+			<Page>I’m not sure. I also was able to translate something about the south pole of Brittle Hollow, so I’ll fly there to see if I can learn more.</Page>
+			<Page>Yep. Just gonna get back in the ol’ ship and take off. Totally safe... Mostly safe. <![CDATA[<size=20>]]>Oh, stars above<![CDATA[</size>]]>...</Page>
+		</Dialogue>
+		<RevealFacts><FactID>BH_RIEBECK_R1</FactID></RevealFacts>
+	</DialogueNode>
+</DialogueTree>

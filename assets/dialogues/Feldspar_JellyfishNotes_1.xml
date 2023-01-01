@@ -1,0 +1,18 @@
+
+<DialogueTree>
+	<NameField>RECORDING</NameField>
+	<DialogueNode>
+		<Name>FeldsparJellyfishJournal</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+    	<RevealFacts>
+    		<FactID>DB_FROZEN_JELLYFISH_X1</FactID>
+    		<FactID>DB_FROZEN_JELLYFISH_X2</FactID>
+    	</RevealFacts>
+		<Dialogue>
+			<Page>Trip 4(?), entry #... I’m gonna say “not 1.”  \\n Crashes: 3 \\n Boring crashes: 0 (a personal best!)</Page>
+			<Page>Whoa <![CDATA[<i>]]>ho<![CDATA[</i>]]>! Never thought I’d see one of these beasties outside of Giant’s Deep! They were awfully useful back there — maybe a jellyfish could be useful here, too?</Page>
+			<Page>BLEARGH. This thing tastes terrible! The outside is all rubbery and tough -- maybe that’s because it insulates the jellyfish’s insides from getting zapped by electricity?</Page>
+			<Page>Right, I’m going inside of this jellyfish’s interior cavity to see if what’s in there tastes any better.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

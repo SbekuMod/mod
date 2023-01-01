@@ -1,0 +1,22 @@
+<DialogueTree>
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Chert’s Research Notes - property of Chert!</Page>
+      <Page>I’ve detected a strange signal coming from somewhere within the grove in this crater.</Page>
+      <Page>It’s very similar to the signal emitted by the Quantum Moon, so it stands to reason the two signals are probably related.</Page>
+      <Page>We don’t know much about the Quantum Moon, seeing as no one’s ever been able to land on it, but hopefully studying the signal in the grove will reveal more about it.</Page>
+    <!--
+      <Page>Trying to count moons for each planet is proving more difficult than expected.</Page>
+      <Page>Does Timber Hearth has one or two moons? I have a hard time keeping tabs on this phantom moon we see sometime in orbit.</Page>
+      <Page>I discovered a signal in the nearby crater, where Gabro hangs out all the time. A similar signal comes from the phantom moon! This might help me find the phantom moon in orbit.</Page>
+    -->
+    </Dialogue>
+    <RevealFacts>
+      <FactID>TH_QUANTUM_SHARD_R1</FactID>
+      <FactID>QUANTUM_MOON_R4</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

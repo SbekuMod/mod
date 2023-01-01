@@ -1,0 +1,113 @@
+<DialogueTree>
+	<NameField>Gneiss</NameField>
+
+	<DialogueNode>
+		<Name>Gneiss1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hello there, space cadet! I hear you’re leaving the crater today.</Page>
+			<Page>If you meet any of the other travelers up there, remind them to take proper care of their instruments, won’t you?</Page>
+		</Dialogue>
+		<SetCondition>TalkedToGneiss</SetCondition>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Tell me about the travelers’ instruments.</Text>
+				<DialogueTarget>Gneiss3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Where’s the observatory?</Text>
+				<DialogueTarget>Observatory</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi before I leave.</Text>
+				<DialogueTarget>Gneiss2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Gneiss2</Name>
+		<Dialogue>
+			<Page>Take care of yourself up in space!</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Observatory</Name>
+		<Dialogue>
+			<Page>
+				It’s questions like that what make us worried about you going up into space on your own, you know.
+			</Page>
+			<Page>
+				The observatory is up the path behind the waterfall. There are a couple of signs marking the way, but really, you just keep going up and then hook a right when you get to the zero-g cave.
+			</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Gneiss3</Name>
+		<Dialogue>
+			<Page>
+				Oh, sure! I made all of their instruments, you know. Let me see... There’s Chert’s drums, Riebeck’s banjo, and Gabbro’s flute.
+			</Page>
+			<Page>
+				And Feldspar’s harmonica, of course, though Feldspar’s been missing for a long time. Sometimes it feels like just yesterday they were playing their harmonica around the campfire...
+			</Page>
+			<Page>
+				Anyway, you hear music in space, that’ll be one of the space program’s other travelers. If you feel like company, you can always pull out your signalscope and track them down.
+			</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>GneissSecondary</Name>
+		<EntryCondition>TalkedToGneiss</EntryCondition>
+		<Dialogue>
+			<Page>
+				Trouble is, every time a Hearthian leaves for outer space, that’s one less musician in our orchestra.
+			</Page>
+			<Page>So! Did you need something?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Tell me about the travelers’ instruments.</Text>
+				<DialogueTarget>Gneiss3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Where’s the observatory?</Text>
+				<DialogueTarget>Observatory</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Nah, I’m good.</Text>
+				<DialogueTarget>Gneiss2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Space</Name>
+		<EntryCondition>Space</EntryCondition>
+		<Dialogue>
+			<Page>Everything okay? Seems kind of early for you to be back from space.</Page>
+			<Page>Did you need something from me?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Tell me about the travelers’ instruments.</Text>
+				<DialogueTarget>Gneiss3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I’m good, actually.</Text>
+				<DialogueTarget>Gneiss4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Gneiss4</Name>
+		<Dialogue>
+			<Page>Alright. Take care, now.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

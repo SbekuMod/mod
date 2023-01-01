@@ -1,0 +1,12 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>This remarkably intact statue was carved by the Nomai, an ancient species who dwelled in our solar system thousands of years ago.</Page>
+			<Page>The statue provides us with our most detailed look yet at the Nomai, who appear to have been covered with a layer of fur. Note the decorative jewelry that has been carved as part of the antlers.</Page>
+			<Page>Although their artifacts and structures have been found on almost every planet in this solar system, we still have no idea where this species came from or what happened to them.</Page>
+		</Dialogue>
+	</DialogueNode>
+ </DialogueTree>

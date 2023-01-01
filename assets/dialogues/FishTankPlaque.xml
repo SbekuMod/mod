@@ -1,0 +1,10 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>This anglerfish specimen was found attached to the landing gear of one of our ships that flew close to Dark Bramble. It appears well-suited to living in dark places with minimal atmosphere.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

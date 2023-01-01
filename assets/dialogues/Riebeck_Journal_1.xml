@@ -1,0 +1,14 @@
+
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>RiebecksJournal</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>The journey here from the south pole has been, um... I’m going to go with “harrowing”, because of the, um, all of the meteors. But hey, at least I made it here unconcussed and not on fire!</Page>
+			<Page>Okay, let’s see... I poked around a little, and there’s some sort of old Nomai path that starts across from my campsite, inside the ruined building with trees growing out of it.</Page>
+			<Page>Doesn’t look like anything horrible - just stairs leading down. I can handle stairs! After I get my supplies together, I’ll follow the path and see where it leads.</Page>
+		</Dialogue>
+		<RevealFacts><FactID>BH_RIEBECK_R3</FactID></RevealFacts>
+	</DialogueNode>
+</DialogueTree>

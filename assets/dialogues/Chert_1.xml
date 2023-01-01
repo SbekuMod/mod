@@ -1,0 +1,262 @@
+<DialogueTree>
+	<NameField>Chert</NameField>
+
+<!--
+	Regular Chert!
+-->
+
+	<DialogueNode>
+		<Name>ChertIntro1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Goodness, it’s you! Hello! I take it your first launch went well, then? Welcome to the Hourglass Twins. <![CDATA[<Pause=2>]]>Mind the sand, now.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredPersistentCondition>ChertFirstContact</RequiredPersistentCondition>
+				<Text>I have a question for you.</Text>
+				<DialogueTarget>Questions</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What are you up to?</Text>
+				<DialogueTarget>ChertIntroExplanation</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>ChertIntroExplanation</Name>
+		<Dialogue>
+			<Page>Hornfels asked me to update our star charts, so I’m out here observing. This is one of the best places in the solar system to spot astronomical events, you know.</Page>
+			<Page>What’s weird is I’ve actually seen a couple of supernovae today. Usually, I’d be fortunate to see just one. Keep an eye or four on the stars, and maybe you’ll spot one yourself!</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>CT_CHERT_X1</FactID>
+			<FactID>CT_CHERT_X2</FactID>
+		</RevealFacts>
+		<SetCondition>SaidHiToChert</SetCondition>
+		<SetCondition>METCHERT_1</SetCondition>
+		<SetPersistentCondition>ChertFirstContact</SetPersistentCondition>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+<!-- 
+	CHERT BASIC QUESTIONS MENU
+-->
+
+	<DialogueNode>
+		<Name>Questions</Name>
+		<Dialogue><Page>Tell me, what can I do for you?</Page></Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I found something!</Text>
+				<DialogueTarget>FoundSomethingMenu</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How do I know if I've spotted a supernova?</Text>
+				<DialogueTarget>Chert4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What are you doing out here?</Text>
+				<DialogueTarget>Chert1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Where should I explore here?</Text>
+				<DialogueTarget>Chert2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How dangerous is that big column of falling sand?</Text>
+				<DialogueTarget>Chert3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi.</Text>
+				<DialogueTarget>Chert5</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Chert1</Name>
+		<Dialogue>
+			<Page>Right now I’m documenting stars. Hornfels noticed our star charts are out of date, so they asked me to update them.</Page>
+			<Page>Please don’t tell the others I said this, but sometimes I think I’m the only traveler out here interested in doing any science at all.</Page>
+			<Page>...Er, maybe don’t tell Hornfels, either. I think they’re pretty deep in denial.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Chert2</Name>
+		<Dialogue>
+			<Page>To be honest, I haven’t left this lakebed. I don’t mean to brag, but I’m really quite good with the Little Scout, so I’ve been taking pictures of everything from right here in my campsite.</Page>
+			<Page>Have you seen the old shipwreck site on Ember Twin’s southern hemisphere, the one shooting a bright beam of light into the sky? It’s not one of our own crashes, surprisingly enough - this one’s a Nomai ship.</Page>
+			<Page>You’ll find Nomai ruins across the Twins, but, strangely, not a single settlement! Believe me, if there was one to see, I’d have seen it with my Little Scout.</Page>
+			<Page>So where did they live? Not on the surface, clearly. Ember Twin is full of cave systems, though - maybe the answer lies underground?</Page>
+		</Dialogue>
+		<RevealFacts><FactID>CT_ESCAPE_POD_R2</FactID><FactID>CT_SUNLESS_CITY_R4</FactID></RevealFacts>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Chert3</Name>
+		<Dialogue>
+			<Page>On a scale of one to dead, I’d give it a seven or eight. Awfully pretty, though.</Page>
+			<Page>Right now sand is flowing from Ash Twin to Ember Twin, but did you know the process eventually reverses? We're not completely sure why the sand flows back and forth between the Twins, but it seems to be a natural phenomena.</Page>
+			<Page>Oh, if you’d like to see something interesting, check out the other Twin once a little more of its sand drains off. I promise you won’t be disappointed.</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Chert4</Name>
+		<Dialogue>
+			<Page>Supernovae look like extra bright stars to the naked eye, but if you zoom in with your signalscope you can tell that they're actually enormous explosions.</Page>
+			<Page>Massive stars go supernova at the very end of their life spans, which is why it's so unusual to see two in a single day.</Page>
+			<Page>I wonder if some of these stars are older than we realized?</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Chert5</Name>
+		<Dialogue>
+			<Page>Watch out for falling sand, okay? I’ve had to dig myself out once or twice, and that’s not half as fun as it sounds.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ChertSecondary</Name>
+		<EntryCondtion>SaidHiToChert</EntryCondtion>
+		<Dialogue>
+			<Page>Hello again!</Page>
+		</Dialogue>
+		<DialogueTarget>Questions</DialogueTarget>
+	</DialogueNode>
+
+<!--
+	CHERT CONDITIONAL MENU STARTS HERE
+-->
+
+	<DialogueNode>
+		<Name>FoundSomethingMenu</Name>
+		<Dialogue>
+			<Page>Please, do tell!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredPersistentCondition>EX_SUPERNOVA</RequiredPersistentCondition>
+				<Text>I found out the sun is about to go supernova.</Text>
+				<DialogueTarget>FoundSomething1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredPersistentCondition>TM_MOON_CRATER_X1</RequiredPersistentCondition>
+				<Text>I found your notes about the Attlerock’s main crater.</Text>
+				<DialogueTarget>FoundSomething2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>QM_SIXTH_LOCATION_R1</RequiredLogCondition>
+				<RequiredLogCondition>QM_SIXTH_LOCATION_R2</RequiredLogCondition>
+				<Text>I found Nomai writing about a hidden planet.</Text>
+				<DialogueTarget>FoundSomething3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>QUANTUM_MOON_R1</RequiredLogCondition>
+				<RequiredLogCondition>QUANTUM_MOON_R2</RequiredLogCondition>
+				<RequiredLogCondition>QUANTUM_MOON_R3</RequiredLogCondition>
+				<Text>I found Nomai writing about the Quantum Moon.</Text>
+				<DialogueTarget>FoundSomething4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>S_SUNSTATION_R1</RequiredLogCondition>
+				<RequiredLogCondition>S_SUNSTATION_R2</RequiredLogCondition>
+				<RequiredLogCondition>S_SUNSTATION_R3</RequiredLogCondition>
+				<Text>I found Nomai writing about the Sun Station.</Text>
+				<DialogueTarget>FoundSomething5</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>DB_VESSEL_X5</RequiredLogCondition>
+				<Text>I found modern Nomai transmissions saying the universe is dying.</Text>
+				<DialogueTarget>FoundSomething6</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Actually, nevermind.</Text>
+				<DialogueTarget>FoundSomething7</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething1</Name>
+		<Dialogue>
+			<Page>What? What makes you think that?</Page>
+			<Page>It’s true the sun has... <![CDATA[<i>]]>changed<![CDATA[</i>]]>, lately, but I’ve not seen any evidence suggesting the approaching death of our sun! Stars above, no!</Page>
+			<Page>I’ll tell you what, though - I’ll keep my eyes on the sun, and if I find any suggestion the its core is collapsing, you shall be the first to know.</Page>
+			<Page>I hope that puts your mind at ease.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething2</Name>
+		<Dialogue>
+			<Page>Did you! I hope they were useful?</Page>
+			<Page>The planet I mentioned may have been frozen solid, or just partially made of ice, like a much colder Giant’s Deep - it’s hard to say. It used to be the fifth planet in our solar system.</Page>
+			<Page>You’ll notice, of course, that there’s no such planet now. In its place is Dark Bramble, which - how to put this - grew into the space the fifth planet used to occupy.</Page>
+			<Page>That is, Dark Bramble quite literally appeared at the center of the fifth planet and began destroying it from the inside-out. Eventually, the planet shattered completely, and its shards were flung across space.</Page>
+			<Page>Some of these shards collided with the celestial bodies in our solar system, such as the Attlerock, which I believe is how its biggest crater was formed.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething3</Name>
+		<Dialogue>
+			<Page>How fascinating! It might interest you to know the existence of an additional planet is entirely plausible, if you look at the physics of our solar system. It would just have to be incredibly far out there - farther than Hearthian ships would be able to travel.</Page>
+			<Page>And honestly, we don’t know all that much about what’s out there. The farther you go, the less we know! As such, it’s well within the realm of possibility such a planet exists.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething4</Name>
+		<Dialogue>
+			<Page>Oh yes, everyone loves a good mystery, don’t they? Who wouldn’t wonder about a moon that’s sometimes there and sometimes not!</Page>
+			<Page>I’ve observed the Quantum Moon orbiting each of the five planets, but sometimes, it quite simply disappears from the sky altogether. Maybe there’s another place it travels to!</Page>
+			<Page>Unfortunately, if there is, I’ve never seen it. Perhaps if I take a closer look at these star charts...</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething5</Name>
+		<Dialogue>
+			<Page>Is that what’s in orbit around the sun, then, do you think? This... Sun Station?</Page>
+			<Page>Quite clever of the Nomai to devise a way to study the sun up close and personal! It must have been tremendously difficult to construct. ...And hot inside. I can only imagine!</Page>
+			<Page>I wonder how were they able to travel back and forth from the Sun Station and the Hourglass Twins, when the slightest slip up would have meant a fiery death.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething6</Name>
+		<Dialogue>
+			<Page>You - what? I don’t... um. What?</Page>
+			<Page>You mean to say there are modern Nomai out in other parts of space? And they believe the universe - all of it, the whole thing - is dying? <![CDATA[<Pause/>]]>Currently? <![CDATA[<Pause/>]]>...Right now?</Page>
+			<Page>If... if that’s true, how could I have missed so many signs? The supernovae were there, but I, but, I’ve been studying the stars for... well, what does it matter if... oh...</Page>
+			<Page>I’m very sorry, b-but I have to look over my charts. I h-h-hope you don’t m-mind...</Page>
+		</Dialogue>
+		<SetCondition>ChertBreakdownNomai</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<EntryCondition>ChertBreakdownNomai</EntryCondition>
+		<Name>ChertBreakdownNomai</Name>
+		<Dialogue>
+			<Page>B-b-but surely, I would have seen some kind of other sign than the supernovae, so p-perhaps...?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundSomething7</Name>
+		<Dialogue>
+			<Page>Nothing you’d like to discuss at the moment? That’s no trouble! If you do discover anything you want to talk about, I’d be happy to help!</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

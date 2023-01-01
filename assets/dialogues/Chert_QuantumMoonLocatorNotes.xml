@@ -1,0 +1,15 @@
+
+<!-- This document was created with Syntext Serna Free. -->
+<DialogueTree>
+  <NameField>RECORDING</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Chert’s Research Notes - property of Chert!</Page>
+      <Page>Clearly, the Nomai were making astronomical observations here. They chose an excellent spot!</Page>
+      <Page>What is this big, rotating device for? What was it the Nomai were observing?</Page>
+      <Page>I’d posit there’s something special about the orange symbol on that device. Hal and the new astronaut’s translator tool would be nice to have handy about now.</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

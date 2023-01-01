@@ -1,0 +1,33 @@
+<!-- Example File -->
+<!-- All files must have "AstroObjectEntry" as their root element, the xmlns:xsi=... and xsi:noNamespaceSchemaLocation=... is optional but heavily encouraged to reduce errors -->
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>TIMBER_HEARTH</ID> <!-- The ID of the planet this xml file is for -->
+
+    <Entry> 
+        <ID>SELF_ENDING</ID> 
+        <Name>SELF_ENDING</Name> 
+        <Curiosity>SELF_ENDING</Curiosity> 
+        <IsCuriosity/> 
+        <IgnoreMoreToExplore/> 
+
+        <RumorFact>
+            <ID>SELF_JUMP_FACT</ID> 
+            <RumorName>SELF_JUMP</RumorName> 
+            <Text>SELF_JUMP_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>SELF_CASUALTY_FACT</ID> 
+            <RumorName>SELF_CASUALTY</RumorName> 
+            <Text>SELF_CASUALTY_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>SELF_PARADOX_FACT</ID> 
+            <RumorName>SELF_PARADOX</RumorName> 
+            <Text>SELF_PARADOX_TEXT</Text>
+        </RumorFact>
+    </Entry>
+
+</AstroObjectEntry>

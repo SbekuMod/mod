@@ -1,0 +1,59 @@
+<DialogueTree>
+	<NameField>Galena</NameField>
+
+	<DialogueNode>
+		<Name>ShyKid1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<size=20>]]>...<![CDATA[</size>]]></Page>
+		</Dialogue>
+		<SetCondition>ShyKidFirstContact</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ShyKid2</Name>
+		<EntryCondition>ShyKidFirstContact</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<size=20>]]>...<![CDATA[</size>]]></Page>
+			<Page><![CDATA[<size=20>]]>Good luck in space.<![CDATA[</size>]]></Page>
+		</Dialogue>
+		<SetCondition>ShyKidSaysHi</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ShyKid3</Name>
+		<EntryCondition>ShyKidSaysHi</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<size=20>]]>...<![CDATA[</size>]]></Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>FoundYou</Name>
+		<EntryCondition>BeginHideAndSeek</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<size=20>]]>...<![CDATA[</size>]]></Page>
+			<Page><![CDATA[<size=20>]]>You found me...<![CDATA[</size>]]></Page>
+		</Dialogue>
+		<SetCondition>FoundKidTwo</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>LastKidFound</Name>
+		<EntryCondition>LastKidToFind</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<size=20>]]>...I won? I’m happy...<![CDATA[</size>]]></Page>
+			<Page><![CDATA[<size=20>]]>Thanks... for playing with us.<![CDATA[</size>]]></Page>
+		</Dialogue>
+		<SetCondition>EndHideAndSeek</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>AlreadyFoundYou</Name>
+		<EntryCondition>FoundKidTwo</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<size=20>]]>...<![CDATA[</size>]]></Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

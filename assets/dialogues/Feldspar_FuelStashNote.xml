@@ -1,0 +1,13 @@
+<DialogueTree>
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>FELDSPAR’S SPARE JETPACK FUEL</Page>
+      <Page>It’s annoying to schlep across the planet to the ship if I can’t use my jetpack, so I’m leaving this here.</Page>
+      <Page>I checked with my Little Scout — I do <![CDATA[<i>too</i>]]> use it, Hornfels, ya burnt marshmallow — and the scout’s integrity reading said this piece of Brittle Hollow is as stable as any, but who knows.</Page>
+      <Page>If the fuel’s still around, feel free to use it. If not, well, wherever you’re reading this note, I’m sure you’ve got bigger problems.</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

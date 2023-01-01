@@ -1,0 +1,200 @@
+<DialogueTree>
+  <NameField>Spinel</NameField>
+
+  <DialogueNode>
+    <Name>Spinel1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>
+        Fishing rhyme, fishing rhyme... Singing helps me pass the time.
+      </Page>
+      <Page>
+        You’re leaving the crater? Guess we’ll all be a little busier without you around to lend a hand.
+      </Page>
+      <Page>
+        That big water planet, Giant’s Deep - that’s where I’d go.
+      </Page>
+    </Dialogue>
+    <SetCondition>SaidHiToSpinel</SetCondition>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Why’s that?</Text>
+        <DialogueTarget>Spinel3</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I need to find Hornfels.</Text>
+        <DialogueTarget>Spinel2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel2</Name>
+    <Dialogue>
+      <Page>Did you try the observatory? I’ve literally never seen them anywhere else.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel3</Name>
+    <Dialogue>
+      <Page>One time, after the rest of the village had left to sleep and it was just the two of us sitting around the campfire, Gabbro told me about their first trip to Giant’s Deep.</Page>
+      <Page>They landed their ship easily enough in the waves, but couldn’t see too far down, on account of how murky the water was, I guess. Too dark.</Page>
+      <Page>Gabbro wants to see what lay beneath the surface, so they decided to travel deeper. They traveled down, and down...</Page>
+      <Page>But suddenly, Gabbro couldn’t go any further.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Tell me more.</Text>
+        <DialogueTarget>Spinel4</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Yeah, Giant’s Deep has a current you can’t pass through.</Text>
+        <DialogueTarget>Spinel5</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I underestimated how boring this would be. Goodbye.</Text>
+        <DialogueTarget>Spinel6</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel6</Name>
+    <Dialogue>
+      <Page>...You always were my least favorite astronaut.</Page>
+    </Dialogue>
+    <SetCondition>SpinelGrumpy</SetCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel4</Name>
+    <Dialogue>
+      <Page>I will, I was just pausing dramatically.</Page>
+    </Dialogue>
+    <DialogueTarget>Spinel7</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel5</Name>
+    <Dialogue>
+      <Page>Sure, okay, but shut up a minute. This is the good part.</Page>
+    </Dialogue>
+    <DialogueTarget>Spinel7</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel7</Name>
+    <Dialogue>
+      <Page>As though exercising a will of its own, the water was refusing to let Gabbro go any deeper. It held Gabbro back. ...Almost as if it were trying to protect them from something.</Page>
+      <Page>And then, in the terrible darkness, Gabbro saw it...!</Page>
+      <Page>The tentacle of some hideous beast!</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>AHHH!</Text>
+        <DialogueTarget>Spinel8</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Is that all true?</Text>
+        <DialogueTarget>Spinel9</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>...Was there sap wine involved during Gabbro’s campfire story?</Text>
+        <DialogueTarget>Spinel10</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel8</Name>
+    <Dialogue>
+      <Page>I mean, that’s what Gabbro said, anyway. Whatever it was, it freaked Gabbro out pretty good.</Page>
+      <Page>Everyone wants to hear new stories at the village campfire, you know. Make sure you bring some back with you!</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel9</Name>
+    <Dialogue>
+      <Page>Heard it from Gabbro themself! Gabbro can be a little fanciful, sure, but they aren’t a liar. I mean, probably, anyway.</Page>
+      <Page>I guess if you want to know if the story’s entirely true, you can go see Giant’s Deep for yourself!</Page>
+      <Page>DEEP_IMPACT_5</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel10</Name>
+    <Dialogue>
+      <Page>Come to think of it, don’t you have somewhere you should be exploring that isn’t here?</Page>
+    </Dialogue>
+    <SetCondition>SpinelGrumpy</SetCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel11</Name>
+    <EntryCondition>SaidHiToSpinel</EntryCondition>
+    <Dialogue>
+      <Page>Fishing song, fishing song... Geez, I think my bait is wrong.</Page>
+      <Page>What are you up to?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>DEEP_IMPACT_REPEAT_1</Text>
+        <DialogueTarget>DEEP_IMPACT_REPEAT_DIALOGUE</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I’m looking for Hornfels.</Text>
+        <DialogueTarget>Spinel12</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Nothing.</Text>
+        <DialogueTarget>Spinel13</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>DEEP_IMPACT_REPEAT_DIALOGUE</Name>
+    <Dialogue>
+      <Page>DEEP_IMPACT_REPEAT_2</Page>
+    </Dialogue>
+    <DialogueTarget>Spinel3</DialogueTarget>
+  </DialogueNode>
+
+
+  <DialogueNode>
+    <Name>Spinel12</Name>
+    <Dialogue>
+      <Page>Oh, them? I’d bet today’s haul they’re in the observatory.</Page>
+      <Page>Not that I’ve caught anything yet, but if I had, I’d definitely bet it. Hornfels is pretty much <![CDATA[<i>]]>always<![CDATA[</i>]]> in the observatory.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel13</Name>
+    <Dialogue>
+      <Page>That’s nice. I’m planning to do a lot of that later.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel14</Name>
+    <EntryCondition>SpinelGrumpy</EntryCondition>
+    <Dialogue>
+      <Page>You can go away now, assuming you’re done scaring off all the fish.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Spinel15</Name>
+    <EntryCondition>Space</EntryCondition>
+    <Dialogue>
+      <Page>Listen, go to space or stay here, but pick one or the other! You’re scaring off all the fish.</Page>
+      <Page>Fishing tune, fishing tune... uh... yeah, I didn’t think this one through at all.</Page>
+    </Dialogue>
+  </DialogueNode>
+  
+
+  
+</DialogueTree>

@@ -1,0 +1,14 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>If a star is massive enough, it will continue to fuse carbon into even heavier elements like iron.</Page>
+			<Page>Ultimately, the star will collapse under its own gravity and then explode in a violent event called a supernova.</Page>
+			<Page>Based on Chert’s observations, this will one day be the fate of our own sun.</Page>
+			<Page>AWAY_FROM_SUPERNOVA_ACHIEVEMENT_2</Page>
+			<Page>AWAY_FROM_SUPERNOVA_ACHIEVEMENT_3</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

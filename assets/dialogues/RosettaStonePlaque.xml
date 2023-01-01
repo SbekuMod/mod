@@ -1,0 +1,11 @@
+   <DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>This piece of Nomai writing was essential to deciphering their unique language.</Page>
+			<Page>Although this text is linear, Nomai text often branches off from a central point. Interestingly, each branch tends to be written by a different author.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

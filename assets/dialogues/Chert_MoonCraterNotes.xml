@@ -1,0 +1,16 @@
+
+<!-- This document was created with Syntext Serna Free. -->
+<DialogueTree>
+  <NameField>RECORDING</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Chert’s Research Notes — property of Chert!</Page>
+      <Page>This is an old crater. The neat thing here is that the composition of the samples I took from the impact site matches the composition of the ice on the outskirts of <![CDATA[<color=lightblue>Dark Bramble</color>]]>.</Page>
+      <Page>I’d posit the <![CDATA[<color=lightblue>Attlerock</color>]]> was hit with a piece of the planet that used to be where <![CDATA[<color=lightblue>Dark Bramble</color>]]> now lies.</Page>
+      <Page>To follow up on — maybe there are more fragments of the old planet <![CDATA[<color=lightblue>Dark Bramble</color>]]> destroyed on other astral bodies in the solar system?</Page>
+    </Dialogue>
+    <SetPersistentCondition>TM_MOON_CRATER_X1</SetPersistentCondition>
+  </DialogueNode>
+</DialogueTree>

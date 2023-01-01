@@ -1,0 +1,11 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>The Nomai technology brought back from space by our astronauts has been a great boon to Outer Wilds Ventures, allowing us to modify expedition gear in exciting and useful ways.</Page>
+			<Page>For example, the Little Scout now boasts a warp retrieval capability that allows astronauts to recall their scouts almost instantly. This has dramatically reduced the number of scouts lost to the depths of space.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

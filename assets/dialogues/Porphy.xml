@@ -1,0 +1,101 @@
+<DialogueTree>
+  <NameField>Porphy</NameField>
+
+  <DialogueNode>
+    <Name>SapWineMaker1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Heyo, hatchling!</Page>
+      <Page>I hear you’re leaving us to seek adventure amongst the stars. When you return, let’s you, me, and Gossan open up a bottle of the Good Stuff.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I’m only seeking adventure amongst one star, actually. Other stars are too far away.</Text>
+        <DialogueTarget>SolarSystem</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>The Good Stuff is less “delicious sap wine” and more “daunting digestive challenge.”</Text>
+        <DialogueTarget>GoodStuff</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <SetCondition>PorphySaysHi</SetCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>SolarSystem</Name>
+    <Dialogue>
+      <Page>Another metaphor ruined in the name of scientific accuracy.</Page>
+      <Page>Nevertheless, I do hope you enjoy your travels. Good luck!</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>GoodStuff</Name>
+    <Dialogue>
+      <Page>An iron stomach is the mark of a true Hearthian, my friend.</Page>
+      <Page>Our hardy hunter-gatherer lifestyle stems from trial and error. By which I mean our ancestors survived eating a lot of bad things.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>SapWineMaker2</Name>
+    <EntryCondition>PorphySaysHi</EntryCondition>
+    <Dialogue>
+      <Page>Ho, the astronaut returns!</Page>
+    </Dialogue>
+    <DialogueTarget>PorphyMenu</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>PorphyMenu</Name>
+    <Dialogue>
+      <Page>Tell me, what I can do for you?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Any new dirt?</Text>
+        <DialogueTarget>NewDirt</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>What are you up to?</Text>
+        <DialogueTarget>WhatsUp</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I’m good, actually.</Text>
+        <DialogueTarget>Goodbye</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>NewDirt</Name>
+    <Dialogue>
+      <Page>I’m hoping to teach Esker to tap trees next time they return from the Attlerock. If they’ll bring me lunar sap, I can attempt moon wine!</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>WhatsUp</Name>
+    <Dialogue>
+      <Page>I’ve just finished sealing up another batch of sap wine for aging. I like to begin aging a batch on the day of a significant occasion, you know!</Page>
+      <Page>That’s why there are so many bottles labeled “structural collapse” and “house fire.”</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Goodbye</Name>
+    <Dialogue>
+      <Page>Enjoy your travels!</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>SapWineMaker3</Name>
+    <EntryCondition>Space</EntryCondition>
+    <Dialogue>
+      <Page>Oh my, and here I thought I’d heard your ship take off. Was your adventure only a short one?</Page>
+    </Dialogue>
+    <DialogueTarget>PorphyMenu</DialogueTarget>
+  </DialogueNode>
+  
+</DialogueTree>

@@ -1,0 +1,13 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Aside from the dwellings and structures they built, the Nomai also made art. This decorated pottery was discovered on Brittle Hollow.</Page>
+			<Page>Some ancient Nomai art depicts strange animals, foreign celestial objects, and other subjects that can’t be found in our solar system, which makes us wonder whether the Nomai originated elsewhere in the universe or simply had vibrant imaginations.</Page>
+			<Page>Were the Nomai born in our solar system? Or were they born among other stars and planets - and if they were, how and why did they come here?</Page>
+			<Page>These are just some of the questions we hope to answer through further xenoarchaeological expeditions.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

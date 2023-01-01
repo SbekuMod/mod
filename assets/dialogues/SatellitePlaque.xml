@@ -1,0 +1,12 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>The radio tower here on Timber Hearth was built to receive transmissions from our deep space satellite, and to this day still houses the first-ever photos taken of the entire solar system.</Page>
+			<Page>These photos were made possible by the deep space satellite’s unusual vertical orbit that carries it high above (and below) the plane of the solar system.</Page>
+			<Page>Thanks to a recent upgrade, the deep space satellite is now responsible for generating the real-time solar system map used by our newest astronauts.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

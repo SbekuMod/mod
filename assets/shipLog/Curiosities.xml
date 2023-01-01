@@ -1,0 +1,155 @@
+<!-- Example File -->
+<!-- All files must have "AstroObjectEntry" as their root element, the xmlns:xsi=... and xsi:noNamespaceSchemaLocation=... is optional but heavily encouraged to reduce errors -->
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>TIMBER_HEARTH</ID> <!-- The ID of the planet this xml file is for -->
+    
+    <Entry> 
+        <ID>HEARTHIANS</ID> 
+        <Name>HEARTHIANS</Name> 
+        <Curiosity>HEARTHIANS</Curiosity> 
+        <IsCuriosity/> 
+        <IgnoreMoreToExplore/> 
+
+        <RumorFact>
+            <ID>HEARTHIANS_SEX_FACT</ID> 
+            <RumorName>HEARTHIANS_SEX</RumorName> 
+            <Text>HEARTHIANS_SEX_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>HEARTHIANS_MATTER_FACT</ID> 
+            <RumorName>HEARTHIANS_MATTER</RumorName> 
+            <Text>HEARTHIANS_MATTER_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>RIEBECK_FINGERS_FACT</ID> 
+            <RumorName>RIEBECK_FINGERS</RumorName> 
+            <Text>RIEBECK_FINGERS_TEXT</Text>
+        </RumorFact>
+    </Entry>
+
+    <Entry> 
+        <ID>SHIP</ID> 
+        <Name>SHIP</Name> 
+        <Curiosity>SHIP</Curiosity> 
+        <IsCuriosity/> 
+        <IgnoreMoreToExplore/> 
+
+        <RumorFact>
+            <ID>SHIP_DISTANCE_INDICATOR_FACT</ID> 
+            <RumorName>SHIP_DISTANCE_INDICATOR</RumorName> 
+            <Text>SHIP_DISTANCE_INDICATOR_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>SHIP_FUEL_FACT</ID> 
+            <RumorName>SHIP_FUEL</RumorName> 
+            <Text>SHIP_FUEL_TEXT</Text>
+        </RumorFact>
+    </Entry>
+
+    <Entry> 
+        <ID>EYE_OF_THE_UNIVERSE</ID> 
+        <Name>EYE_OF_THE_UNIVERSE</Name> 
+        <Curiosity>EYE_OF_THE_UNIVERSE</Curiosity> 
+        <IsCuriosity/> 
+        <IgnoreMoreToExplore/> 
+
+        <RumorFact>
+            <ID>EYE_OF_THE_UNIVERSE_DISTANCE_FACT</ID> 
+            <RumorName>EYE_OF_THE_UNIVERSE_DISTANCE</RumorName> 
+            <Text>EYE_OF_THE_UNIVERSE_DISTANCE_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>QUANTIC_MOON_ORIGIN_FACT</ID> 
+            <RumorName>QUANTIC_MOON_ORIGIN</RumorName> 
+            <Text>QUANTIC_MOON_ORIGIN_TEXT</Text>
+        </RumorFact>
+    </Entry>
+
+    <Entry> 
+        <ID>PROBE</ID> 
+        <Name>PROBE</Name> 
+        <Curiosity>PROBE</Curiosity> 
+        <IsCuriosity/> 
+        <IgnoreMoreToExplore/> 
+
+        <RumorFact>
+            <ID>PROBE_ATP_FACT</ID> 
+            <RumorName>PROBE_ATP</RumorName> 
+            <Text>PROBE_ATP_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>PROBE_PROPULSION_FACT</ID> 
+            <RumorName>PROBE_PROPULSION</RumorName> 
+            <Text>PROBE_PROPULSION_TEXT</Text>
+        </RumorFact>
+    </Entry>
+
+    <Entry> 
+        <ID>PLANETS</ID> 
+        <Name>PLANETS</Name> 
+        <Curiosity>PLANETS</Curiosity> 
+        <IsCuriosity/> 
+        <IgnoreMoreToExplore/> 
+
+        <RumorFact>
+            <ID>PLANETS_NOMAI_FACT</ID> 
+            <RumorName>PLANETS_NOMAI</RumorName> 
+            <Text>PLANETS_NOMAI_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>PLANETS_TWINCAVE_FACT</ID> 
+            <RumorName>PLANETS_TWINCAVE</RumorName> 
+            <Text>PLANETS_TWINCAVE_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>PLANETS_DEEP_CORE_FACT</ID> 
+            <RumorName>PLANETS_DEEP_CORE</RumorName> 
+            <Text>PLANETS_DEEP_CORE_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>PLANETS_INSECTS_FACT</ID> 
+            <RumorName>PLANETS_INSECTS</RumorName> 
+            <Text>PLANETS_INSECTS_TEXT</Text>
+        </RumorFact>
+
+        <RumorFact>
+            <ID>PLANETS_ORIGINS_FACT</ID> 
+            <RumorName>PLANETS_ORIGINS</RumorName> 
+            <Text>PLANETS_ORIGINS_TEXT</Text>
+        </RumorFact>
+    </Entry>
+
+    <Entry> 
+        <ID>BILLION_YEARS_END</ID> 
+        <Name>MORE</Name> 
+        <Curiosity>BILLION_YEARS_END</Curiosity> 
+        <IsCuriosity/> 
+        <IgnoreMoreToExplore/> 
+
+        <RumorFact>
+            <ID>BILLION_YEARS_END_FACT</ID> 
+            <RumorName>MORE</RumorName> 
+            <Text>MORE_INSECTS_TEXT</Text>
+        </RumorFact>
+        <RumorFact>
+            <ID>BILLION_YEARS_END_FACT2</ID> 
+            <RumorName>MORE_CANNON</RumorName> 
+            <Text>MORE_CANNON_TEXT</Text>
+        </RumorFact>
+        <RumorFact>
+            <ID>BILLION_YEARS_END_FACT3</ID> 
+            <RumorName>MORE_NAMES</RumorName> 
+            <Text>MORE_NAMES_TEXT</Text>
+        </RumorFact>
+    </Entry>
+
+</AstroObjectEntry>

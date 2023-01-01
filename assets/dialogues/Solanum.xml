@@ -1,0 +1,30 @@
+<DialogueTree>
+	<NameField>Solanum</NameField>
+	
+	<DialogueNode>
+		<Name>Nomai1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>...</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Who are you?</Text>
+				<DialogueTarget>Nomai2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Where are we?</Text>
+				<DialogueTarget>Nomai2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Nomai2</Name>
+		<SetPersistentCondition>MET_SOLANUM</SetPersistentCondition>
+		<Dialogue>
+			<Page>...</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

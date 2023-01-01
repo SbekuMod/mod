@@ -1,0 +1,14 @@
+<DialogueTree>
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Despite my checking on them at least a thousand times over, the images are STILL not ready to print over in the radio tower. Well, it’s like they say — a watched satellite never transmits data! <![CDATA[<size=20>]]>(Haha, that’s a little joke for you, journal. No one says that.)<![CDATA[</size>]]></Page>
+      <Page>Someday, I’ll have to study the mechanics of how time manages to slow to a syrupy crawl whenever I’m anticipating something. In the meantime, I’ve turned to Gabbro, our resident expert in leisurely whiling away the hours, who recommends the following:</Page>
+      <Page>GABBRO’S 3 FOOLPROOF STEPS FOR DOZING OFF\\n     1.     Light a nice, cozy campfire and get comfortable.\\n     2.     Gaze deeply into the serene warmth.\\n     3.     Let time begin to slip away as you allow the flames to lull you into a peaceful slumber.</Page>
+      <Page>(If Gabbro knew I’d taken notes, they’d probably think I’d finally cracked, but I refuse to accept sass from an astronaut who deliberately burns their marshmallows.)</Page>
+    </Dialogue>
+<!--     <RevealFacts><FactID>TH_RADIO_TOWER_X2</FactID></RevealFacts>
+ -->  </DialogueNode>
+</DialogueTree>

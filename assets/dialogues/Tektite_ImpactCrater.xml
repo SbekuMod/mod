@@ -1,0 +1,154 @@
+<DialogueTree>
+  <NameField>Tektite</NameField>
+
+  <DialogueNode>
+    <Name>Intro1</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Heyo, hatchling! Thought you were taking that tin can of yours into space today - what’re you still doing here?</Page>
+      <Page>Me? I was using the old scout launcher and saw smoke in one of the photos, so I thought I’d come over here myself and take a look.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>So what crashed?</Text>
+        <DialogueTarget>Tektite1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Is that a Dark Bramble seed?</Text>
+        <DialogueTarget>Tektite2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+    <SetCondition>TalkedToImpactTektite</SetCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Intro2</Name>
+    <EntryCondition>FindTheThing</EntryCondition>
+    <Dialogue>
+      <Page>You again, eh, hatchling? Thought I heard you lift off earlier. What’re you still doing on Timber Hearth?</Page>
+      <Page>Me? I’m out here to see what it was I saw crash over this way. That, and make sure nothing’s on fire.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>So what crashed?</Text>
+        <DialogueTarget>Tektite1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Is that a Dark Bramble seed?</Text>
+        <DialogueTarget>Tektite2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Intro3</Name>
+    <EntryCondition>YesPicture_ShouldNotTrigger</EntryCondition>
+    <Dialogue>
+      <Page>You again, eh, hatchling? Thought I heard you lift off earlier. What’re you still doing on Timber Hearth?</Page>
+      <Page>Me? That Scout photo you took earlier showed smoke, so I came over to check for fires, remember?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>So what crashed?</Text>
+        <DialogueTarget>Tektite1</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Is that a Dark Bramble seed?</Text>
+        <DialogueTarget>Tektite2</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Tektite1</Name>
+    <Dialogue>
+      <Page>I dunno what it is, exactly. Looks like some kind of plant seed, but it’s not anything I’ve seen on Timber Hearth before - and trust me, I was quite the explorer back in the day.</Page>
+      <Page>D’you think it’s extraterrestrial? It kinda looks like something that might’ve come off of Dark Bramble. Whatever it is, it put down roots in a hurry.</Page>
+    </Dialogue>
+    <DialogueTarget>Tektite3</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Tektite2</Name>
+    <Dialogue>
+      <Page>You think so? It’s nothing I’ve ever seen on Timber Hearth before, so you’re probably onto something there.</Page>
+      <Page>Whatever it is, it put down roots in a hurry.</Page>
+    </Dialogue>
+    <DialogueTarget>Tektite3</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Tektite3</Name>
+    <Dialogue>
+      <Page>I don’t like the look of this thing, hatchling, and that’s a fact. Think I’ll set Marl and Hal loose on it. Best get rid of this mess sooner rather than later, and no one can remove an unwanted plant faster than a tree keeper can.</Page>
+      <Page>I’ll have to get a look at what’s inside the seed, first, though. Don’t want to set anybody to hacking up a potentially dangerous plant without a better idea of what’s lurking inside there.</Page>
+      <Page>Tuff can help me haul the old <![CDATA[<color=orange>scout launcher</color>]]> over here. Obviously the opening is too small for someone to fit inside, and anyway, I’m not gonna blindly stick my hands into anything that looks as unpleasant as that seed does.</Page>
+      <Page>That’s a good way to lose an arm or two.</Page>
+    </Dialogue>
+    <RevealFacts><FactID>TH_IMPACT_CRATER_X1</FactID></RevealFacts>
+    <SetCondition>TalkedToImpactTektite</SetCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Tektite4</Name>
+    <EntryCondition>TalkedToImpactTektite</EntryCondition>
+    <Dialogue>
+      <Page>Blasted seed did a lot of damage when it crashed. I liked this crater.</Page>
+      <Page>Need something from me, hatchling?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+
+      <DialogueOption>
+        <Text>I threw a Little Scout into the seed.</Text>
+        <DialogueTarget>Tektite5</DialogueTarget>
+        <RequiredLogCondition>TH_IMPACT_CRATER_X3</RequiredLogCondition>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>My signalscope is picking up a harmonica inside the seed.</Text>
+        <DialogueTarget>Tektite6</DialogueTarget>
+        <RequiredLogCondition>TH_IMPACT_CRATER_X2</RequiredLogCondition>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>You’re sure this seed isn’t from Timber Hearth?</Text>
+        <DialogueTarget>Tektite7</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Nope, I’m good.</Text>
+        <DialogueTarget>Tektite8</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Tektite5</Name>
+    <Dialogue>
+      <Page>You did, did you? And you’re telling me it’s bigger on the inside than on the outside?</Page>
+      <Page>Hmph. This is going to be a chore to chop up, and no mistake. Can we even remove a seed that doesn’t have the decency to stay the same size all the way through?</Page>
+      <Page>Maybe I’d better grab an extra axe or three, just in case.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Tektite6</Name>
+    <Dialogue>
+      <Page>Inside the seed? Huh. Dunno what to tell you there - the only harmonica player I know is Feldspar, and they disappeared ages ago.</Page>
+      <Page>Listen here, don’t go telling Gneiss about the harmonica music, okay? They’ll never let me get rid of this darn seed if they suspect it has any musical talent.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Tektite7</Name>
+    <Dialogue>
+      <Page>Back in my younger days, I explored everywhere there is to go on Timber Hearth and saw everything there is to see, and then some. Trust me, we don’t have anything like this.</Page>
+      <Page>Nah, I reckon this thing’s from Dark Bramble if it’s from anywhere, hatchling.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Tektite8</Name>
+    <Dialogue>
+      <Page>Alright then, see you around.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

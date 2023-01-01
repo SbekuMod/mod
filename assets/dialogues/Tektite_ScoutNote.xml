@@ -1,0 +1,12 @@
+
+<DialogueTree>
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>I saw smoke coming from Youngbark Crater up north and figured I should go check it out. You can use the scout launcher, just please don’t break it while I’m gone – Tektite</Page>
+    </Dialogue>
+    <!-- <RevealFacts><FactID>TH_IMPACT_CRATER_R2</FactID></RevealFacts> -->
+  </DialogueNode>
+</DialogueTree>

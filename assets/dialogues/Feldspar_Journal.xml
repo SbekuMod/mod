@@ -1,0 +1,20 @@
+
+<DialogueTree>
+	<NameField>RECORDING</NameField>
+	<DialogueNode>
+		<Name>FeldsparJournal1</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+		<SetCondition>FoundFeldsparsJournal</SetCondition>
+		<RevealFacts>
+			<FactID>GD_BRAMBLE_ISLAND_X1</FactID>
+			<FactID>DB_FELDSPAR_R1</FactID>
+			<FactID>GD_OCEAN_R3</FactID>
+		</RevealFacts>
+		<Dialogue>
+			<Page>Trip 4, entry # whatever \\n Crashes: 2 \\n Boring crashes: 0 (remember to see Slate when I get back)</Page>
+			<Page>Ha <![CDATA[<i>]]>ha<![CDATA[</i>]]>, yeah! <![CDATA[<i>]]>Yeah<![CDATA[</i>]]>! All the way down to the core! Consider yourself conquered, Giant’s Deep — you just got <![CDATA[<i>]]>Feldsparred<![CDATA[</i>]]>.</Page>
+			<Page>That was one of my more dramatic feats, if I do say so myself. Can’t believe I wasn’t electrocuted! Ahhh, can’t wait to tell Hornfels and Gossan about this one — I guess brute force isn’t always the answer.</Page>
+			<Page>Right, so that’s one more off the list. Seems all that’s left is the big one now. Dark Bramble, here I come!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

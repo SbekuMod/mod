@@ -1,0 +1,12 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>What you see here are parts of the Nomai skeleton. We can tell from their skulls that they possessed antlers and, quite unusually, only three eyes.</Page>
+			<Page>The Nomai body was most likely adapted for living exclusively on land. The differences in the Nomai’s anatomy, such as their shockingly fragile bone structure, show us that Hearthians couldn’t have descended from Nomaian ancestors.</Page>
+			<Page>It’s not clear where the Nomai originated from, or why they disappeared. We hope to find more clues to this puzzle as we explore our solar system.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

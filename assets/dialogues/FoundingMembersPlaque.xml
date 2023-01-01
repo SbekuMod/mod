@@ -1,0 +1,10 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Outer Wilds Ventures’ founding members. Clockwise from top left: Hornfels, Gossan, Slate, and Feldspar.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

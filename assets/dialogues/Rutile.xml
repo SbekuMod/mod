@@ -1,0 +1,112 @@
+<DialogueTree>
+	<NameField>Rutile</NameField>
+	
+	<DialogueNode>
+		<Name>Mayor1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>You’re actually blasting off in that thing, huh?</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>They really don’t explode as often anymore.</Text>
+				<DialogueTarget>SkepticAnswer1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I’m told my odds of survival are statistically quite high.</Text>
+				<DialogueTarget>SkepticAnswer2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		<SetCondition>MayorSaysHi</SetCondition>
+
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>SkepticAnswer1</Name>
+		<Dialogue>
+			<Page>
+				All I know is between the space program and Mica’s model rockets, things seem to burn to the ground around here more than they used to.
+			</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>SkepticAnswer2</Name>
+		<Dialogue>
+			<Page>
+				Yeah, the space program’s certainly come a long way. I should probably thank you for causing fewer flash fires than your predecessors.
+			</Page>
+			<Page>
+				By the way, good luck with those retro rockets.
+			</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Mayor2</Name>
+		<EntryCondition>MayorSaysHi</EntryCondition>
+		<Dialogue>
+			<Page>Hey, what can I do for you?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredCondition>Tree</RequiredCondition>
+				<Text>Marl is plotting to cut down that big tree. Again.</Text>
+				<DialogueTarget>Marl</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Are you going to watch the launch?</Text>
+				<DialogueTarget>Launch</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Do you really worry that the space program will burn the village down?</Text>
+				<DialogueTarget>Fires</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I’m good.</Text>
+				<DialogueTarget>Good</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Marl</Name>
+		<Dialogue>
+			<Page><![CDATA[<Color=#808080ff>]]>Sigh...<![CDATA[</Color>]]> I suppose it’s my duty as mayor to stop them. Again.</Page>
+			<Page>When Marl fell out of that tree and broke their arm, I suspect they might have also hit their head on the way down.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Fires</Name>
+		<Dialogue>
+			<Page>Only constantly. You learn to live with it.</Page>
+			<Page>You also learn to sleep with a bucket of water next to your bed, just in case.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Launch</Name>
+		<Dialogue>
+			<Page>Of course!</Page>
+			<Page>I’ll be watching from a safe distance, obviously, and mostly to make sure nothing catches fire. But watching nonetheless.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Good</Name>
+		<Dialogue>
+			<Page>Glad to hear it.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>MayorSpace</Name>
+		<EntryCondition>Space</EntryCondition>
+		<Dialogue>
+			<Page>You’re back already? Is everything OK?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

@@ -1,0 +1,17 @@
+<DialogueTree>
+  <NameField>RECORDING</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>...Aaand we’re recording! Ahem. It’s been two days since the launch of the deep space satellite, and I’m about to view the first batch of photos. Let the record show that on this historic day, Outer Wilds Ventures has—</Page>
+      <Page>Aaaah! They’re printing, they’re printing! Here they come!</Page>
+      <Page>…Stars above, will you look at that. There’s Brittle Hollow. And look, look there, that’s Hollow’s Lantern! And there’s Giant’s Deep, and — and the Quantum Moon! I’m speechless, completely speechless.</Page>
+      <Page>Every single astral body in our magnificent solar system, looking stunning from every angle in each of these three images. And in color, no less! Now this is art. I could stare at these photos forever. Doesn’t Timber Hearth look tiny from —</Page>
+      <Page>Hold on. What is <![CDATA[<i>]]>that<![CDATA[</i>]]>?</Page>
+      <Page>That can’t be right. That’s… I mean, that’s not even possible. Am I interpreting this photo correctly? What’s even stranger is it doesn’t show up in either of the other photos. Just this one…</Page>
+      <Page>Well, there must have been an equipment malfunction, I suppose. Only sensible explanation for it. I’ll radio Gabbro and ask them to go examine the satellite’s lens for defects.</Page>
+    </Dialogue>
+    <RevealFacts><FactID>TH_RADIO_TOWER_X1</FactID></RevealFacts>
+  </DialogueNode>
+</DialogueTree>

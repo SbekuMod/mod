@@ -1,0 +1,13 @@
+
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>FeldsparJellyfishJournal</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+		<RevealFacts><FactID>DB_FROZEN_JELLYFISH_X3</FactID></RevealFacts>
+		<Dialogue>
+			<Page>Note to Feldspar: DO NOT EAT THIS EVEN IF YOU ARE DYING. It would be too sad if this were the last thing you ever ate in this life.</Page>
+			<Page>I guess these jellyfish are only useful for insulation from electricity. Again, DO NOT EAT. (Love, Feldspar)</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

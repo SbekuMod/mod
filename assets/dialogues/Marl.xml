@@ -1,0 +1,80 @@
+<DialogueTree>
+	<NameField>Marl</NameField>
+
+	<DialogueNode>
+		<Name>Marl1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>So it’s launch day, huh? Hal’s going to miss you.</Page>
+			<Page>Speaking of launch day... I was thinking about it, and the platform those ships launch from is getting old. Isn’t it about time you built a new, less flammable one?</Page>
+			<Page>That big tree in the village would be the perfect choice. I wouldn’t mind helping out the space program. Just say the word!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>The current launch pad is fine, thanks.</Text>
+				<DialogueTarget>Fine</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Nice try. We all know you have it out for that tree.</Text>
+				<DialogueTarget>Out</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>The launch pad is FLAMMABLE?!</Text>
+				<DialogueTarget>Flammable</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Fine</Name>
+		<Dialogue>
+			<Page>Oh. Really? Dang.</Page>
+			<Page>Well, maybe someone needs a new porch or something. <![CDATA[<Pause/>]]>A big one.</Page>
+		</Dialogue>
+		<SetCondition>Tree</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Out</Name>
+		<Dialogue>
+			<Page>What? No, I just think it’s in the way and someone ought to chop it down, you know? Specifically, me.</Page>
+			<Page>...Haha, you think this has to do with the time I fell out of it and broke my arm? That was when we were hatchlings! Who would hold a grudge for that long?</Page>
+		</Dialogue>
+		<SetCondition>Tree</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Flammable</Name>
+		<Dialogue>
+			<Page>Ha! You didn’t realize that?</Page>
+			<Page>Don’t worry, it’s held up for all the launches so far. It’ll definitely be fine for yours. Probably.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Esker1</Name>
+		<Dialogue>
+			<Page>If you swing by the moon, say hi to Esker for me.</Page>
+		</Dialogue>
+		<SetPersistentCondition>SayHiToEsker</SetPersistentCondition>
+		<RevealFacts><FactID>TM_ESKER_R1</FactID></RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Tree</Name>
+		<EntryCondition>Tree</EntryCondition>
+		<Dialogue>
+			<Page>...That tree has got it coming.</Page>
+		</Dialogue>
+
+		<DialogueTarget>Esker1</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>Space</Name>
+		<EntryCondition>Space</EntryCondition>
+		<Dialogue>
+			<Page>What are you doing back? Did you forget your spacesuit or something?</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

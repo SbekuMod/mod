@@ -1,0 +1,12 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Watch closely... these balls move on their own! </Page>
+			<Page>The ground is perfectly level, so what do you think causes this spooky motion?</Page>
+			<Page>The answer is the moon! As it orbits our planet, the Attlerock’s gravity pulls on objects from different directions. In fact, it’s pulling on you right now!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

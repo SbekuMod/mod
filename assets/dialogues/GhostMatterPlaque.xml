@@ -1,0 +1,13 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>DANGER! Inside this fence is a pocket of <![CDATA[<color=orange>ghost matter</color>]]> - a strange and dangerous substance that’s invisible to the naked eyes. The good news is that you can detect <![CDATA[<color=orange>ghost matter</color>]]> with a camera.</Page>
+			<Page>
+				Moving through <![CDATA[<color=orange>ghost matter</color>]]> is uniquely painful and will probably kill you. Don’t complain to me if you hurt yourself fooling around.\\n- Hornfels
+			</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

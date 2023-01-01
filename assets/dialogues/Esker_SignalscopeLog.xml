@@ -1,0 +1,24 @@
+
+<!-- This document was created with Syntext Serna Free. -->
+<DialogueTree>
+  <NameField>SIGN</NameField>
+  <DialogueNode>
+    <Name>Sign</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Esker’s Signalscope Log</Page>
+      <Page>Day 48: Still not picking up Riebeck’s banjo from Brittle Hollow. I’m sure they’re fine, but I’ll feel better once I can hear their music.</Page>
+      <Page>Day 51: Listened to Chert play for a while today. Unrelated, someone should tell Porphy and Gossan their flirting is <![CDATA[<i>]]>not<![CDATA[</i>]]> subtle from an aerial perspective.</Page>
+      <Page>Day 55: Banjo music coming in loud and clear today! Sounds like Riebeck’s doing okay. That oaf, I was worried!</Page>
+      <Page>Day 63: Today I thought I heard something... strange. I don’t know — it was probably nothing.</Page>
+      <Page>Day 70: No, it’s back again today, too. Something strange is coming from Timber Hearth.</Page>
+      <Page>Day 76: Okay, I <![CDATA[<i>]]>know<![CDATA[</i>]]> this is crazy, but the sound from Timber Hearth sounds exactly like Feldspar’s harmonica. But Feldspar disappeared in space ages ago. It can’t be them...</Page>
+      <Page>Day 88: It’s <![CDATA[<i>]]>still here<![CDATA[</i>]]>. This is creepy. Maybe my signalscope is broken? I’d better talk to Gneiss.</Page>
+    </Dialogue>
+    <SetCondition>SHOW_SIGNALSCOPE_PROMPT</SetCondition>
+    <RevealFacts>
+      <FactID>TH_IMPACT_CRATER_R1</FactID>
+      <FactID>TM_NORTH_POLE_X1</FactID>
+    </RevealFacts>
+  </DialogueNode>
+</DialogueTree>

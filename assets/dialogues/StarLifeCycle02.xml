@@ -1,0 +1,11 @@
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Sign</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>As the star’s core contracts, it gets hotter, causing the outer layers to expand. The star has become a red giant.</Page>
+			<Page>When the core is hot enough, it starts to fuse helium into carbon.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

@@ -1,0 +1,15 @@
+
+<DialogueTree>
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>RiebecksJournal</Name>
+    	<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hurgh. Well. That was... deeply unpleasant. I made it this far, though. Guess that’s the part to focus on, and not how I’ll eventually have to get back <![CDATA[<i>]]>up<![CDATA[</i>]]> that path.</Page>
+			<Page>But wow, this place sure is something! Looks like the Hanging City is north from here. And east is a gravity cannon! I <![CDATA[<i>]]>definitely<![CDATA[</i>]]> want to see that.</Page>
+			<Page>And another thing - I’m detecting oxygen from somewhere below. Which is good, since I, uh, used up a lot of my supply screaming during the trip down from the surface.</Page>
+			<Page>As soon as I stop dry heaving, I’m going to head farther down below so I can refill my tank.</Page>
+		</Dialogue>
+		<RevealFacts><FactID>BH_RIEBECK_R4</FactID></RevealFacts>
+	</DialogueNode>
+</DialogueTree>
